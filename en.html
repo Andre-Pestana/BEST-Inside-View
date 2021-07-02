@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<script type="text/javascript">
+		var style = 'home/css/template.css?'+Math.random();;
+	</script>
+		
+	<script type="text/javascript">
+		document.write('<link href="'+style+'" rel="stylesheet">');
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35166719-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-35166719-1');
+	</script>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+	<meta name="copyright" content="ninodezign.com">
+	<title>BEST Inside View</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/ico/biv.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/BEST_icon_114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/BEST_icon_114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/BEST_icon_72.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/BEST_icon_57.png">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="courses/js/jquery.countdown.js"></script>
+
+</head>
+
+<body data-target="#nino-navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header">
+		<div id="nino-headerInner" class="text-center">
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="../index.html"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li onclick="goTO('../en.html')"><a href="">Home </a></li>
+								<li onclick="goTO('../covid/index.html')"><a href="">COVID-19</a></li>
+								<li onclick="goTO('../about_en.html')"><a href="">About us</a></li>
+								<!--<li onclick="goTO('./BESTOn/index.html')"><a href="">BESTON</a></li>-->
+								<li onclick="goTO('../onechallenge/index.html')"><a href="">One Challenge</a></li>
+								<li onclick="goTO('../LEoE/index.html')"><a href="">LEoE</a></li>
+								<li onclick="goTO('../ebec2021/index.html')"><a href="">EBEC</a></li>
+								<li class="active" onclick="goTO('./en.html')"><a href="#nino-header">BIV
+										<span class="sr-only">(current)</span></a></li>
+								<!--<li onclick="goTO('../courses/en.html')"><a href="">BEST Courses</a></li>-->
+								<li onclick="goTO('../team/en.html')"><a href="">Management</a></li>
+								<li onclick="goTO('../recruitment/en.html')"><a href="">Recruitment</a></li>
+								<!--<li onclick="goTO('./registo/index.html')"><a href="">Registo BIV</a></li> -->
+								<li onclick="goTO('./index.html')"><a href=""><img src="images/pt_flag.png"
+											style="height:15px;"></a></li>
+								<script>
+									function goTO(link) {
+										window.open(link, "_self");
+									}
+								</script>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+			<img src="images/BIV2020/BIV_Banner.png">
+		</div>
+	</header>
+	<!--/#header-->
+
+	<!-- Counting 
+	================================================== -->
+	<!--<section id="nino-counting">
+		<div class="container text-center">
+			<h2 class="nino-sectionHeading" style="color: #fff; margin-bottom: -20px;">Apply for the Inside Days!
+			</h2>
+			<div class="row">
+				<div class="col-md-2 col-sm-6 item">
+					<div id="days" class="number"></div>
+					<div class="text">days</div>
+				</div>
+				<div class="col-md-2 col-sm-6 item">
+					<div id="hours" class="number"></div>
+					<div class="text">hours</div>
+				</div>
+				<div class="col-md-2 col-sm-6 item">
+					<div id="minutes" class="number"></div>
+					<div class="text">minutes</div>
+				</div>
+				<div class="col-md-2 col-sm-6 item">
+					<div id="seconds" class="number"></div>
+					<div class="text">seconds</div>
+				</div>
+				<div class="col-md-4 col-sm-6 item col-sm-offset-3 col-md-offset-0"
+					onclick="goTO('./insideview/index.html')">
+					<a href="https://forms.gle/SAtiTSUZ88jekjdq6">
+						<div class="text text-signup">
+							<p style="padding-top:7%; padding-bottom:0%; color:White; font-size: 20px;">Apply here</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!--/#nino-counting-->
+
+	<!-- BEST Inside View + BEST Lisboa
+    ================================================== -->
+
+	<section id="nino-uniqueDesign">
+		<div style="background: rgba(255,255,255,0.5);">
+			<div class="container text-center">
+				<!--<h2 class="nino-sectionHeading">
+					</h2>-->
+				<h2 class="nino-sectionHeading">
+					BEST Inside View
+				</h2>
+				<iframe height="400" width="800" src="https://www.youtube.com/embed/FDOcx2Bf2_I" frameborder="0"
+					gesture="media" allowfullscreen style="max-width: 100%;"></iframe>
+				<img class="teamMember" src="images/ico/biv_en.png">
+			</div>
+		</div>
+	</section>
+	<!--/#nino-uniqueDesign-->
+
+	<section id="timeline" class="text-center" style="background-color: rgba(0, 74, 173);">
+		<div class="container text-center">
+			<h2 class="nino-sectionHeading" style="color: #fff;">Our Event</h2>
+			<div class="row align">
+				<div class="col-md-6">
+					<img src="images/BIV2020/Timeline_vertical.png">
+				</div>
+				<div class="col-md-6" style="margin: auto 0; background-color: rgba(0, 74, 173);">
+					<div class="row">
+						<div class="col-md-6 teamMember">
+							<img src="images/ico/graph_blue.png" height="190">
+							<p class="text"> The <b>company</b> gains more exposure in the students' community and a
+								closer
+								interaction with the students.
+							</p>
+						</div>
+						<div class="col-md-6 teamMember">
+							<img src="images/ico/person_blue.png" height="190">
+							<p class="text">The <b>student</b> gains knowladge about how the company operates:
+								The work methods used, it's structure and organization.
+							</p>
+						</div>
+						<div class="col-md-6 teamMember">
+							<img src="images/ico/handshake_blue.png" height="190">
+							<p class="text"> Strengthens the bond between university students and the
+								job market.
+							</p>
+						</div>
+						<div class="col-md-6 teamMember">
+							<img src="images/ico/business_blue.png" height="190">
+							<p class="text"> Follow a professional of you area of interest for a day.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<h2 class="nino-sectionHeading">Meet our sponsors!</h2>
+
+	<section id="companies">
+		<div class="container text-center">
+			<div class="row" style="margin-bottom: 30px;">
+				<div class="col-md-4"><a href="https://tecnico.ulisboa.pt"><img src="images/logosinstitucionais/IST.png"
+							alt="" style="max-height:100px"></a></div>
+				<div class="col-md-4"><a href="http://www.idesporto.pt/"><img src="images/logosinstitucionais/IPDJ.png"
+							alt="" style="max-height:100px"></a></div>
+				<div class="col-md-4"><a href="https://www.santandertotta.pt/"><img
+							src="images/logosinstitucionais/Santander.png" alt="" style="max-height:200px"></a></div>
+			</div>
+			<br>
+			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br><br>
+			<div class="row">
+				<!--Empresas Diamond-->
+				<a href="https://www.energetus.pt/" target="_blank">
+					<div class="col-md-6" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Diamond/Energetus.png" style="max-height: 200px;">
+					</div>
+				</a>
+				<a href="https://www.jll.pt/" target="_blank">
+					<div class="col-md-6" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Diamond/jlltetris.png" style="max-height: 200px;">
+					</div>
+				</a>
+			</div>
+			<div class="row">
+				<a href="https://www.novabase.pt/" target="_blank">
+					<div class="col-md-6" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Diamond/novabase-logo.svg" style="max-height: 200px;">
+					</div>
+				</a>
+				<a href="https://www.celfocus.com/home/" target="_blank">
+					<div class="col-md-6" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Diamond/celfocus-logo.svg" style="max-height: 200px;">
+					</div>
+				</a>
+			</div>
+			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br><br>
+			<div class="row">
+				<!--Empresas Gold-->
+				<a href="https://transinsular.pt/pt/grupo-ete" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Gold/ete.png" style="max-height: 175px;">
+					</div>
+				</a>
+				<a href="https://jetsj.com/" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Gold/jet.jpeg" style="max-height: 175px;">
+					</div>
+				</a>
+				<a href="https://oak-peak.com/" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Gold/oakpeak.png" style="max-height: 175px;">
+					</div>
+				</a>
+			</div>
+			<div class="row">
+				<a href="https://www.premium-minds.com/" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Gold/premiumminds.png" style="max-height: 175px;">
+					</div>
+				</a>
+				<a href="http://en.thenavigatorcompany.com/" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Gold/navigator-logo.png" style="max-height: 175px;">
+					</div>
+				</a>
+				<a href="https://consulai.com/" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem; margin-top: 4%;">
+						<img src="images/empresas 2020/Gold/consulai-logo.svg" style="max-height: 175px;">
+					</div>
+				</a>
+			</div>
+			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 30px auto 0px auto;"></div>
+			<br><br>
+			<div class="row">
+				<a href="https://www.ipfn.tecnico.ulisboa.pt/" target="_blank">
+					<!--Empresas Silver-->
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Silver/plasmas.png" style="max-height: 150px;">
+					</div>
+				</a>
+				<a href="https://skyline.be/" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Silver/skyline-logo.svg" style="max-height: 150px;">
+					</div>
+				</a>
+				<a href="https://www.sidul.pt/home" target="_blank">
+					<div class="col-md-4" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Silver/sidul-logo.png" style="max-height: 100px;">
+					</div>
+				</a>
+			</div>
+			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br>
+			<div class="row">
+				<a href="https://www.ibm.com/pt-en" target="_blank">
+					<!--Empresas Bronze-->
+					<div class="col-md-2 col-md-offset-1" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Bronze/ibm.png" style="max-height: 100px;">
+					</div>
+				</a>
+				<a href="https://jsj.pt/main/" target="_blank">
+					<div class="col-md-2" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Bronze/jsj-logo.png" style="max-height: 100px;">
+					</div>
+				</a>
+				<a href="https://www.life-emotions.pt/pt" target="_blank">
+					<div class="col-md-2" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Bronze/lifeemotions.png" style="max-height: 100px;">
+					</div>
+				</a>
+				<a href="http://www.noz.com.pt/" target="_blank">
+					<div class="col-md-2" style="margin-bottom: 1rem;">
+						<img src="images/empresas 2020/Bronze/noz-arch-logo.jpg" style="max-height: 100px;">
+					</div>
+				</a>
+				<a href="https://clynx.io/" target="_blank">
+					<div class="col-md-2" style="margin-bottom: 1rem; margin-top: -1%;">
+						<img src="images/empresas 2020/Bronze/clynx-logo.png" style="max-height: 100px;">
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!--<section id="nino-whatWeDo">
+		<div class="container" class="text-center">
+			<div class="col-md-2  col-sm-4">
+				<img src="images/ico/lampada.png" align="center">
+				<p class="nino-sectionDesc">A 9ª edição do BEST Inside View terá início no dia 19 de Novembro de 2019,
+					com a <b>Cerimónia de Abertura </b>
+					que terá lugar no Instituto Superior Técnico.</p>
+			</div>
+			<div class="col-md-1  col-sm-1">
+			</div>
+			<div class="col-md-2  col-sm-4">
+				<img src="images/ico/people.png" align="center">
+				<p class="nino-sectionDesc"> De seguida haverá uma <b>Sessão de Networking</b> onde os alunos poderão
+					conhecer
+					de perto as empresas e oportunidades que estas trazem ao evento!</p>
+			</div>
+			<div class="col-md-1  col-sm-1">
+			</div>
+			<div class="col-md-2  col-sm-4">
+				<img src="images/ico/lupa.png" align="center">
+				<p class="nino-sectionDesc"> Não te esqueças de ler os <b>Regulamentos</b> para estudantes do IST <a
+						href="./[BIV][Participants]Regulation.pdf">aqui</a></p>
+			</div>
+			<div class="col-md-1  col-sm-1">
+			</div>
+			<div class="col-md-2  col-sm-4">
+				<img src="images/ico/people2.png" align="center">
+				<p class="nino-sectionDesc"> Quando os resultados das colocações forem anunciados, poderás entrar em
+					contacto direto com a empresa que irás visitar e estabelecer aí a data concreta do teu <b>Inside
+						Day!</b> </p>
+			</div>
+			<div class="col-md-1  col-sm-1">
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Our Team 
+	================================================== -->
+	<section id="team" style="margin-top: -20px;">
+		<div class="text-center">
+			<div class="row" style="background:  rgba(253, 155, 28); padding: 1% 0;">
+				<h2 class="nino-sectionHeading" style="color: #fff;">Get to know our team!</h2>
+				<div class="col-md-4 col-md-offset-4 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Rita.jpg">
+					<h5 class="name mb-0" style="color: #fff;">Rita Santos</h5>
+					<p class="mb-0 position" style="color: #fff;">Main Organiser</p>
+					<a href="https://www.linkedin.com/in/rita-santos-30049b187"><img
+							src="images/BIV2020/white_linkedin.png" height="30"></a>
+				</div>
+			</div>
+			<div class="row" style="background: rgba(0, 74, 173); padding: 1% 0;">
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Beatriz.jpeg">
+					<h5 class="name mb-0" style="color: #fff;">Beatriz Vale</h5>
+					<p class="mb-0 position" style="color: #fff" ;>Communication Responsible</p>
+					<a href="https://www.linkedin.com/in/beatriz-vale-655895172/"><img
+							src="images/BIV2020/white_linkedin.png" height="30"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Filipa.jpeg">
+					<h5 class="name mb-0" style="color: #fff">Filipa Costa</h5>
+					<p class="mb-0 position" style="color: #fff">Public Relations Responsible</p>
+					<a href=""><img src="images/BIV2020/white_linkedin.png" height="30"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Leonor.jpeg">
+					<h5 class="name mb-0" style="color: #fff">Leonor Godinho</h5>
+					<p class="mb-0 position" style="color: #fff">Corporate Relations Responsible</p>
+					<a href="https://www.linkedin.com/in/leonor-rgodinho/"><img src="images/BIV2020/white_linkedin.png"
+							height="30"></a>
+				</div>
+			</div>
+			<div class="row" style="background:rgba(253, 155, 28); padding: 1% 0;">
+				<div class="col-md-4 col-md-offset-2 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Duarte.jpeg">
+					<h5 class="name mb-0" style="color: #fff;">Duarte Costa</h5>
+					<p class="mb-0 position" style="color: #fff;">Design Responsible</p>
+					<a href="https://www.linkedin.com/in/duarte-costa-a98096198/"><img
+							src="images/BIV2020/white_linkedin.png" height="30"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Jamilson.jpg">
+					<h5 class="name mb-0" style="color: #fff;">Jamilson Junior</h5>
+					<p class="mb-0 position" style="color: #fff;">Information Technology Responsible</p>
+					<a href="https://www.linkedin.com/in/jamilson-junior/"><img src="images/BIV2020/white_linkedin.png"
+							height="30"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Docs
+    ================================================== -->
+	<section id="nino-doc" style="background-color: grey; margin-top: -30px;">
+		<div class="container" style="text-align: center;">
+			<a href="docs/biv_regulations.pdf" target="_blank" class="nino-sectionHeading1">
+				<i class="mdi mdi-file-document nino-icon"></i>
+				<span class="text">Regulation</span>
+			</a>
+		</div>
+	</section>
+
+	<!-- Portfolio
+	================================================== -->
+	<section id="previous-editions" style="margin-top: -40px;">
+		<h2 class="nino-sectionHeading">
+			Past Events
+		</h2>
+		<div id="slideshow" class="carousel slide" data-ride="carousel">
+			<!-- Indicators
+			<ol class="carousel-indicators">
+				<li data-target="#slideshow" data-slide-to="0" class="active"></li>
+				<li data-target="#slideshow" data-slide-to="1"></li>
+				<li data-target="#slideshow" data-slide-to="2"></li>
+				<li data-target="#slideshow" data-slide-to="3"></li>
+				<li data-target="#slideshow" data-slide-to="4"></li>
+				<li data-target="#slideshow" data-slide-to="5"></li>
+				<li data-target="#slideshow" data-slide-to="6"></li>
+				<li data-target="#slideshow" data-slide-to="7"></li>
+			</ol> -->
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/BIV2020/biv2019_1.jpg">
+						<p class="text">9th edition 2019</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/BIV2020/biv2019.jpg">
+						<p class="text">9th edition 2019</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/BIV2020/biv2019_2.jpg">
+						<p class="text">9th edition 2019</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV08.jpg">
+						<p class="text">8th edition 2018</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV07.jpg">
+						<p class="text">7th edition 2017</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/1BIV06.jpg">
+						<p class="text">6th edition 2016</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV05.jpg">
+						<p class="text">5th edition 2015</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV04.jpg">
+						<p class="text">4th edition 2014</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV03.jpg">
+						<p class="text">3rd edition 2013</p>
+					</div>
+				</div>
+
+				<!--<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV02.jpg">
+						<p class="text">2nd edition 2012</p>
+					</div>
+				</div>-->
+
+				<div class="item">
+					<div class="col-md-4 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV01.jpg">
+						<p class="text">1st edition 2011</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#slideshow" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#slideshow" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+
+	<!-- Testimonial
+    ================================================== -->
+	<section class="nino-testimonial">
+		<div class="container">
+			<h2 class="nino-sectionHeading title">
+				Testimonials
+			</h2>
+			<div class="nino-testimonialSlider">
+				<ul>
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-comment-multiple-outline nino-icon"></i>
+							</div>
+							<div>
+								<p class="quote">"What I propose to offer is a totally different vision regarding
+									the job opportunities associated with Engeneering Courses, to show that the current
+									vision of what an Engeneer can do is still very reductive and eletist, when in
+									reality,
+									if we are not afraid of looking through the window instead of through the keyhole,
+									we can
+									see that there are countless possibilities."
+								</p>
+								<span class="name">André Vale, Associação Cultural Moinho da Juventude</span>
+							</div>
+						</div>
+					</li>
+					<!------------------------------------------------------------------------------------------------------>
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-wechat nino-icon"></i>
+							</div>
+							<div>
+								<p class="quote">"I joined BEST 2 years ago and learned right away about BEST Inside
+									View!
+									I was responsible for the losgistics of the Opening Ceremony and the Networking
+									Session,
+									which was truly enriching. The best part about this event is how it's genuinely
+									dedicated
+									to the students and their needs as future succesful professionals. It was wonderful
+									to
+									contribute and have an impact on the students' academic life."</p>
+								<span class="name">Catarina Carinhas, BEST Lisboa - Logistics Responsible of the 5th
+									edition</span>
+							</div>
+						</div>
+					</li>
+					<!------------------------------------------------------------------------------------------------------>
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-comment-multiple-outline nino-icon"></i>
+							</div>
+							<div>
+								<p class="quote">"The involvement I had on the 6th edition of BEST Inside View was an
+									enriching
+									experience, I had the opportunity to talk to a lot of experienced professionals and
+									develop
+									my network."
+								</p>
+								<span class="name">António Caxaria, BEST Lisboa - Main Organizer of the 6th
+									edition</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!--/#nino-testimonial-->
+
+	<!-- Footer
+    ================================================== -->
+	<footer id="footer_old">
+		<div class="container text-center">
+			<div class="row line">
+				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6">
+					<h1 style="font-size:16px; color: #69CD28;"><b> Contactos</b> </h1>
+					<p style="color: #FFF;"> lisbon@best.eu.org </p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6">
+					<h1 style="font-size:14px; color: #FAA519 ;"> <b>Morada</b> </h1>
+					<p style="color: #FFF;"> Av. Rovisco Pais, 1 </p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6 col-ts-offset-3">
+					<h1 style="font-size:14px; color: #1973BE ;"><b> Segue-nos </b></h1>
+					<div class="nino-followUs">
+						<div class="socialNetwork">
+							<a href="https://www.facebook.com/bestlisboa/" class="nino-icon"><i
+									class="mdi mdi-facebook"></i></a>
+							<a href="https://www.instagram.com/best.lisbon" class="nino-icon"><i
+									class="mdi mdi-instagram"></i></a>
+							<a href="https://www.linkedin.com/company/best-lisboa/" class="nino-icon"><i
+									class="mdi mdi-linkedin"></i></a>
+							<a href="https://www.youtube.com/user/BESTLisboa" class="nino-icon"><i
+									class="mdi mdi-youtube-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nino-copyright" style="color: #FFF;">BEST Lisbon 2020 <br>All Rights Reserved.</div>
+	</footer>
+	<!--/#footer-->
+
+	<!-- Scroll to top
+    ================================================== -->
+	<a href="#" id="nino-scrollToTop">Go to Top</a>
+
+	<script>
+		initializeClock();
+		function initializeClock() {
+			var d = new Date();
+			var endtime = new Date("Dec 6, 2020 23:59:59");        //mudar aqui a data, ano/mês/dia/hora/minuto...
+			var days = document.getElementById("days");
+			var hours = document.getElementById("hours");
+			var minutes = document.getElementById("minutes");
+			var seconds = document.getElementById("seconds");
+			var timeinterval = setInterval(function () {
+				var t = getTimeRemaining(endtime);
+				days.innerHTML = t.days;
+				hours.innerHTML = t.hours;
+				minutes.innerHTML = t.minutes;
+				seconds.innerHTML = t.seconds;
+				if (t.total <= 0) {
+					clearInterval(timeinterval);
+				}
+			}, 1000);
+		}
+
+		function getTimeRemaining(endtime) {
+			var t = Date.parse(endtime) - Date.parse(new Date());
+			var seconds = Math.floor((t / 1000) % 60);
+			var minutes = Math.floor((t / 1000 / 60) % 60);
+			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+			var days = Math.floor(t / (1000 * 60 * 60 * 24));
+			return {
+				'total': t,
+				'days': days,
+				'hours': hours,
+				'minutes': minutes,
+				'seconds': seconds
+			};
+		}
+
+	</script>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+</body>
+
+</html>

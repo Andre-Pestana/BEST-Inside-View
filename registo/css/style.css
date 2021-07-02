@@ -1,0 +1,307 @@
+ #contact{
+    padding:10px 0 10px;
+  }
+  
+  .block {
+ border: 1px dotted red;
+ padding: 10px;    
+}
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .check{
+	  float: right;
+  }
+  
+.center {
+    display: block;
+    margin: 0 auto;
+}
+  
+  .css-label{
+			float: right;
+  }
+
+	input[type=checkbox].css-checkbox.lrg + label.css-label.lrg {
+		padding-left:22px;
+		height:20px; 
+		display:inline-block;
+		line-height:20px;
+		background-repeat:no-repeat;
+		background-position: 0 0;
+		font-size:15px;
+		vertical-align:middle;
+		cursor:pointer;
+		float: right;
+	}
+
+	input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg{
+
+		background-position: 0 -20px;
+	}
+
+	.web-two-style{background-image:url(http://csscheckbox.com/checkboxes/web-two-style.png);}
+
+  
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 6px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:15px;
+	margin-left: -15px;
+    color:#727272 !important;
+    font-size:14px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+  
+  .hidden{
+        display: none;
+    }
+	
+	.auto{
+		display: block;
+		margin: 0 auto;
+	}
+	
+	
+	img:hover {
+		cursor: pointer;
+	}
+  
+  .img_size {
+    width: 80%;
+    height: auto;
+}
+
+.xs_corr{
+	padding-left:5px !important;
+	padding-right:5px !important;
+}
+.head{
+	margin-top:5px !important;
+	margin-bottom:5px !important;
+}
+
+.img_size_cross{
+    width: 15px;
+	float: right;
+    height: auto;
+}
+  
+ .border{
+    border-radius: 2px;
+	margin: auto;
+    border: 3px solid #124274;
+    padding: 5px 5px 20px 0px; 
+}
+
+.margin_f{
+	margin: 2px 2px 5px 2px !important;
+}
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#8BC3A3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+center{
+  margin-top:330px;
+}
+input {
+    position: relative;
+    z-index: 9999;
+}
+
+.header{
+	width:100%;
+	background-color: #3B628B;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.footer{
+	width:100%;
+	background-color: #6D929B;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.sec_box{
+	margin-bottom:7px;
+	background-color: #6D929B;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.just{
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.p_style{
+	margin-right:12%;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form2{
+    width: 20%;
+    padding: 0px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:15px;
+	margin-top:15px;
+	margin-left: -15px;
+    color:#727272 !important;
+    font-size:14px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form2:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form2:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+  
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35166719-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-35166719-1');
+</script>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+	<meta name="copyright" content="ninodezign.com"> 
+	<title>BEST Inside View</title>
+	
+	<!-- favicon -->
+    <link rel="shortcut icon" href="images/ico/biv.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/BEST_icon_114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/BEST_icon_114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/BEST_icon_72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/BEST_icon_57.png">
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+	
+</head>
+
+<body data-target="#nino-navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header-en">
+		<div id="nino-headerInner">					
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="../en.html"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li onclick="goTO('../en.html')"><a href="">Home <span class="sr-only">(current)</span></a></li>
+								<li onclick="goTO('../about_en.html')"><a href="">About</a></li>
+								<li onclick="goTO('../ebecchallenge/en.html')"><a href="">EBEC Challenge</a></li>
+								<li class="active" onclick="goTO('./en.html')"><a href="#nino-header">Inside View</a></li>
+								<li onclick="goTO('../courses/en.html')"><a href="">BEST Courses</a></li>
+								<!-- <li onclick="goTO('../equipa_en.html')"><a href="">Management</a></li> -->
+								<!-- <li onclick="goTO('./recruitment/index.html')"><a href="">Recruitment</a></li> -->
+								<li onclick="goTO('./index.html')"><a href=""><img src="../home/images/pt_flag.png" style="height:15px;"></a></li>
+								<script>
+									function goTO(link){
+										window.open(link, "_self");
+									}
+								</script>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<section id="nino-slider" class="carousel slide container" data-ride="carousel">
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					
+				</div>
+
+				<!-- Indicators -->
+				<ol class="carousel-indicators clearfix">
+					
+				</ol>
+			</section>
+		</div>
+	</header><!--/#header-->
+
+	<!-- BEST Inside View + BEST Lisboa
+    ================================================== -->
+	<section id="nino-story">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				BEST Inside View
+				<br>
+				<br>
+				<span class="nino-subHeading">A chance for the students to contact their future</span>
+			</h2>
+			<p class="nino-sectionDesc">BEST Inside View is a job shadowing and mentoring event, in which a college student follows an engineer working in his/her area of personal interest for an entire day, closely observing their daily routine. This event's goal is not only to help students understand what professional options are available for them but also the roles they may perform in the future: all this comes to strengthen the link between college students and the job market. Through this initiative, the student gets to understand a little better the way the company works: the working methods, their structure and organization. On the other hand, the visited company gets a bigger exposure to the academic community and a closer contact to the participants.</p>
+			
+			<!--  Tentativa de imagens: fui buscar as imagens ao template anterior  -->
+			
+		</div>		
+	</section><!--/#nino-story-->
+	<!-- Counting
+    ==================================================
+	<section id="nino-story">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				Apply now for BEST Inside View!
+				<br><br>
+				Don't miss this chance to sign in!
+			</h2>
+		</div>
+	</section>
+	
+	
+    <section id="nino-counting">
+    	<div class="container">
+    		<div layout="row" class="verticalStretch">
+    			<div class="col-sm-1 col-xs-1 item">
+					<div id="days" class="number"></div>
+					<div class="text">days</div>
+    			</div>
+    			<div class="item">
+					<div id="hours" class="number"></div>
+					<div class="text">hours</div>
+    			</div>
+    			<div class="item">
+					<div id="minutes" class="number"></div>
+					<div class="text">minutes</div>
+    			</div>
+    			<div class="item">
+					<div id="seconds" class="number"></div>
+					<div class="text">seconds</div>
+    			</div>
+    			<div class="item" onclick="goTO('./')">
+    				<a href=""><div class="text text-signup">
+						<p style="padding-top:15%;">Sign up</p>
+					</div></a>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+    <!--/#nino-counting-->
+
+	<!-- Deixar espaço para a DESCRIÇÃO DA 7ª EDIÇÃO! -->
+	<!-- What We Do -->
+    <section id="nino-whatWeDo">
+    	<div class="container">
+    		<h2 class="nino-sectionHeading">
+				BEST Inside View
+				<br><br>
+				7<sup>th</sup> Edition
+			</h2>
+			<div class="sectionContent">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="text-center">
+							<img src="images/7edicao/facebook1.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<br>
+						<br>
+						<br>
+						<p class="nino-sectionDesc">The seventh edition do BEST Inside View officially started on 23/11/2017 with the Opening Cerimony that will took place in the Salão Nobre of Instituto Superior Técnico. Right after it, there was a networking session where students can got in touch with the companies and the opportunities that they bring to the event! When the registration results are announced, you can get in touch with the company that you'll visit and establish your own Inside Day!</p>
+						<p class="nino-sectionDesc">The registration period will be extended until 11/02/2018.</p>
+						<p class="nino-sectionDesc">You can consult the event's regulation <a href="./IST Regulation.pdf">here</a> if you're an IST student and <a href="./FCUL+FFUL Regulation.pdf">here</a> if you're a FCUL or FFUL student.</p>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section><!--/#nino-whatWeDo-->
+	<!------------------------------------------------------------------------------------->
+	
+    <!-- Empresas: Press wall
+    ================================================== -->
+    <section id="nino-whatWeDo">
+    	<div class="container">
+    		<br>
+    		<h2 class="nino-sectionHeading">
+				Participating companies 2017-2018
+			</h2>
+			<div class="sectionContent">
+				<div class="col-md-12">
+					<img src="images/empresas2017/empresas.png" alt="">
+				</div>
+			</div>
+    	</div>
+    </section><!--/#nino-whatWeDo-->
+
+    <!-- Testimonial
+    ================================================== -->
+    <section class="nino-testimonial">
+    	<div class="container">
+    		<div class="nino-testimonialSlider">
+				<ul>
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-comment-multiple-outline nino-icon"></i>
+							</div>
+							<div>
+								<p class="quote">"What I offer is a completely different view from the current one as regards the job possibilities associated to engineering courses; to show that there is still a reductive vision of what an engineer can do, when in reality you can see an endless amount of possibilities if you're not afraid to look through the window instead of the door lock."</p>
+								<span class="name">André Vale, Associação Cultural Moinho da Juventude</span>
+							</div>
+						</div>
+					</li>
+					<!------------------------------------------------------------------------------------------------------>
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-wechat nino-icon"></i>	
+							</div>
+							<div>
+								<p class="quote">"I joined BEST two years ago and I became acquainted with BEST Inside View right away! I became responsible for all the logistics for the opening cerimony and networking session and it was truly enriching. The best part is that BEST Inside View is an event that is genuinely dedicated to students and their needs as future successful professionals. It is awesome to contribute and have that impact on students' academic path."</p>
+								<span class="name">Catarina Carinhas, BEST Lisboa - Logistics Responsible (5th Edition)</span>
+							</div>
+						</div>
+					</li>
+					<!------------------------------------------------------------------------------------------------------>
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-comment-multiple-outline nino-icon"></i>
+							</div>
+							<div>
+								<p class="quote">"The involvement that I had on the 6th Edition of BEST Inside View was a rich experience, I had the opportunity to talk with a lot of professionals and to develop my network."</p>
+								<span class="name">António Caxaria, BEST Lisboa - Main Organizer (6th Edition)</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+    	</div>
+    </section><!--/#nino-testimonial-->
+
+    <!-- Our Team
+    ================================================== -->
+	<section id="nino-ourTeam">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">Who we are</span>
+				Meet our team!
+			</h2>
+			<div class="sectionContent">
+			
+				<!------------------------------ Primeira fila de fotos -->
+				
+				<div class="row nino-hoverEffect">
+					<div class="col-md-1 col-sm-1" style="padding: 6%;"></div>
+					<div class="col-md-3 col-sm-3">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="https://www.linkedin.com/in/ivo-carrilho-33b47197/" class="nino-icon"><i class="mdi mdi-linkedin"></i></a>
+								</div>
+								<img src="images/our-team/ivo.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Ivo Carrilho</h4>
+							<span class="regency">Main Organizer</span>
+						</div>
+					</div>
+					<!-------------------------------------------------------------------------------->
+					<div class="col-md-3 col-sm-3">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="https://www.linkedin.com/in/rodrigo-fernandes-15b17413a/" class="nino-icon"><i class="mdi mdi-linkedin"></i></a>
+								</div>
+								<img src="images/our-team/rodrigo.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Rodrigo Fernandes</h4>
+							<span class="regency">Corporate Team</span>
+						</div>
+					</div>
+					<!-------------------------------------------------------------------------------->
+					<div class="col-md-3 col-sm-3">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="https://www.linkedin.com/in/maria-catarina-fernandez-446077151/" class="nino-icon"><i class="mdi mdi-linkedin"></i></a>
+								</div>
+								<img src="images/our-team/catarina.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Catarina Fernandez</h4>
+							<span class="regency">Public Relations Team</span>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-------------------------- Segunda fila de fotos -->
+				<br>
+				<div class="row nino-hoverEffect">
+					<div class="col-md-1 col-sm-1" style="padding: 6%;"></div>
+					<div class="col-md-3 col-sm-3">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="https://www.linkedin.com/in/bruna-henriques-408498100/" class="nino-icon"><i class="mdi mdi-linkedin"></i></a>
+								</div>
+								<img src="images/our-team/bruna.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Bruna Henriques</h4>
+							<span class="regency">Marketing Team</span>
+						</div>
+					</div>
+					<!-------------------------------------------------------------------------------->
+					<div class="col-md-3 col-sm-3">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="https://www.linkedin.com/in/manuellopes98/" class="nino-icon"><i class="mdi mdi-linkedin"></i></a>
+								</div>
+								<img src="images/our-team/cajada.png" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Manuel Lopes</h4>
+							<span class="regency">Marketing Team</span>
+						</div>
+					</div>
+					<!-------------------------------------------------------------------------------->
+					<div class="col-md-3 col-sm-3">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="https://www.linkedin.com/in/n%C3%A9lio-candel%C3%A1ria-100b8b150/" class="nino-icon"><i class="mdi mdi-linkedin"></i></a>
+								</div>
+								<img src="images/our-team/nelio.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Nélio Candelária</h4>
+							<span class="regency">Information Technology Responsible</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/#nino-ourTeam-->
+	
+	<!-- Portfolio
+    ================================================== -->
+	<section id="nino-portfolio">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				Previous Editions
+			</h2>
+		</div>
+		<div class="sectionContent">
+			<ul class="nino-portfolioItems">
+				<li class="item">
+					<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]"
+					title="The first edition, done in 2012, turned out to be grear success. This edition had 1085 registrations, of which 185 were chosen to participate in the 69 proposals  done by 28 companies.
+					It definitely was one of the biggest events that a students' association had ever done in Instituto Superior Técnico. This means that IST students are curious and expectant about the future!" 
+					href="images/edicoes-anteriores/BIV01.jpg">
+						<img src="images/edicoes-anteriores/BIV01.jpg" />
+						<div class="overlay">
+							<div class="content">
+								<h4 class="title">1<sup>st</sup> Edition</h4>
+								<span class="desc">2012-2013</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]" 
+					title="The second edition, done in 2013, turned out another success!
+							There were 740 registrations done, of which 220 were chosen to participate in 85 proposals done by 28 companies."
+					href="images/edicoes-anteriores/BIV02.jpg">
+						<img src="images/edicoes-anteriores/BIV02.jpg" />
+						<div class="overlay">
+							<div class="content">
+								<h4 class="title">2<sup>nd</sup> Edition</h4>
+								<span class="desc">2013-2014</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]" 
+					title="The third edition, done in 2014, followed up the two previous editions.
+						There were 193 participants in proposals done by 27 companies."
+					href="images/edicoes-anteriores/BIV03.jpg">
+						<img src="images/edicoes-anteriores/BIV03.jpg" />
+						<div class="overlay">
+							<div class="content">
+								<h4 class="title">3<sup>rd</sup> Edition</h4>
+								<span class="desc">2014-2015</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="nino-portfolioItems">
+				<li class="item">
+					<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]" 
+					title="The fourth edition, done in 2015, was another great accomplishment.
+								More than 300 students applied to the 220 vacancies in the 24 participating companies."
+					href="images/edicoes-anteriores/BIV04.jpg">
+						<img src="images/edicoes-anteriores/BIV04.jpg" />
+						<div class="overlay">
+							<div class="content">
+								<h4 class="title">4<sup>th</sup> Edition</h4>
+								<span class="desc">2015-2016</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]" 
+					title="The fifth edition of BEST Inside View was restructured: with a view to a better bet on the mentoring concept, BEST Lisbon promoted a narrower conection between students and engineers.
+							There were 56 companies in the event, who presented 107 proposals in diversified areas, who welcomed about 210 students from Instituto Superior Técnico and Faculdade de Ciências da Universidade de Lisboa for a whole day of work." 
+							href="images/edicoes-anteriores/BIV05.jpg">
+						<img src="images/edicoes-anteriores/BIV05.jpg" />
+						<div class="overlay">
+							<div class="content">
+								<h4 class="title">5<sup>th</sup> Edition</h4>
+								<span class="desc">2015</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="item">
+					<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]" 
+					title="The sixth edition of BEST Inside View started on 24/11/2016 with the Opening Cerimony in the Salão Nobre of Instituto Superior Técnico.
+								The registrations period started officially on that day and were extended until 29/01/2017. During this period, there were a total of 248 registrations in 67 different companies.
+								As soon as the placement results were announced, each student could reach the company to establish his/her Inside Day." 
+					href="images/edicoes-anteriores/BIV06.jpg">
+						<img src="images/edicoes-anteriores/BIV06.jpg" />
+						<div class="overlay">
+							<div class="content">
+								<h4 class="title">6<sup>th</sup> Edition</h4>
+								<span class="desc">2016-2017</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section><!--/#nino-portfolio-->
+	
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-6">
+        			<div class="colInfo">
+	        			<div class="footerLogo">
+	        				<a href="#" >Contacts</a>	
+	        			</div>
+	        		<!--	<p>
+	        				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	        			</p>
+	        			<div class="nino-followUs">
+	        				<div class="totalFollow"><span>15k</span> followers</div>
+	        				<div class="socialNetwork">
+	        					<span class="text">Follow Us: </span>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-pinterest"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-google-plus"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-youtube-play"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-dribbble"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-tumblr"></i></a>
+	        				</div>
+	        			</div>-->
+	        			<form action="" class="nino-subscribeForm">
+	        				<div class="input-group input-group-lg">
+								<p style="margin-bottom: 0px;padding-left: 15px;"><b>Our Email:</b> lisbon@best.eu.org</p>
+								<p style="padding-left: 15px;"><b>Our Address:</b> Av. Rovisco Pais 1, 1049-001 Lisboa</p>
+								<div class="col-md-12">
+									<input type="email" style="width:100%" class="form-control" placeholder="Your Email" required>
+									<input type="text" style="margin-top:5px; width:100%" class="form-control" placeholder="Subject" required>
+									<textarea rows="4" class="form-control" style="margin-top:5px; border-color: #e7e7e7; box-shadow: none; font-style: italic; font-size: 15px;" placeholder="Message" required></textarea>
+								</div>
+								<div class="col-md-12 col-sm-12">
+									<span class="input-group-btn">
+										<button class="btn btn-success" style="margin-top:8px" type="submit">Talk to us!</button>
+									</span>
+								</div>
+							</div>
+	        			</form>
+        			</div>
+        		</div>
+				<br>
+				<br>
+        		<div class="row nino-hoverEffect col-md-6 co-sm-6">
+					<div class="col-md-offset-4 col-md-5 col-sm-5">
+						<div class="item" style="margin-bottom: 20px;">
+							<div class="overlay">
+								<div class="content" style="text-transform: none; font-size: 14px;">
+									<p> <b>EMAIL:</b> iafcarrilho@gmail.com </p>
+									<p> <b>NUMBER:</b> +351 926 151 772</p>
+								</div>
+								<img src="images/our-team/ivo.jpg" style="width: 100%; height:auto;">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Ivo Carrilho</h4>
+							<span class="regency">Main Organizer</span>
+						</div>
+					</div>
+				</div>
+        	</div>
+			<div class="nino-copyright">BEST Lisboa 2018 <br>All Rights Reserved.        </div>
+    </footer><!--/#footer-->
+
+    <!-- Search Form - Display when click magnify icon in menu
+    ================================================== -->
+    <form action="" id="nino-searchForm">
+    	<input type="text" placeholder="Search..." class="form-control nino-searchInput">
+    	<i class="mdi mdi-close nino-close"></i>
+    </form><!--/#nino-searchForm-->
+	
+    <!-- Scroll to top
+    ================================================== -->
+	<a href="#" id="nino-scrollToTop">Go to Top</a>
+	
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="courses/js/jquery.countdown.js"></script>
+	
+	<script>
+		initializeClock();
+		function initializeClock(){
+		  var d = new Date();
+		  var endtime = new Date(2018, 1, 12);        //mudar aqui a data, ano/mês/dia/hora/minuto...
+		  var days = document.getElementById("days");
+		  var hours = document.getElementById("hours");
+		  var minutes = document.getElementById("minutes");
+		  var seconds = document.getElementById("seconds");
+		  var timeinterval = setInterval(function(){
+			var t = getTimeRemaining(endtime);
+			days.innerHTML = t.days;
+			hours.innerHTML = t.hours;
+			minutes.innerHTML = t.minutes;
+			seconds.innerHTML = t.seconds;
+			if(t.total<=0){
+			  clearInterval(timeinterval);
+			}
+		  },1000);
+		}
+		   
+	    function getTimeRemaining(endtime){
+		  var t = Date.parse(endtime) - Date.parse(new Date());
+		  var seconds = Math.floor( (t/1000) % 60 );
+		  var minutes = Math.floor( (t/1000/60) % 60 );
+		  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+		  var days = Math.floor( t/(1000*60*60*24) );
+		  return {
+			'total': t,
+			'days': days,
+			'hours': hours,
+			'minutes': minutes,
+			'seconds': seconds
+		  };
+		}
+
+	</script>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+		
+</body>
+</html>

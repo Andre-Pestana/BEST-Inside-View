@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35166719-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-35166719-1');
+</script>
+
+
+  <meta charset="UTF-8">
+  <title>BEST Inside View</title>
+  <link rel="icon" href="img/biv.ico">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+	<div class="header">
+		<img class="center img_size" src="img/banner.png">
+	</div>
+  
+</head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/alertify.min.js"></script>
+	<link rel="stylesheet" href="css/alertify.core.css" />
+	<!-- include a theme, can be included into the core instead of 2 separate files -->
+	<link rel="stylesheet" href="css/alertify.default.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/script.js"></script>
+
+	<script>
+	//If page is loaded using an incorrect url, guides user to correct page
+	if(window.location.href!='http://best.tecnico.ulisboa.pt/insideview/registo/index.html')
+		setTimeout(function() {
+		  window.location.href = "http://best.tecnico.ulisboa.pt/insideview/registo/index.html";
+		}, 1000);
+	</script>
+
+	<script type="text/javascript">
+	
+			
+			//Number of companies
+			var n= 9;
+			var divs=1;
+				
+			function expand(x) {
+				var i, j;
+				for(i=1; i<10; i++){
+					if(i!=3&&i!=4&&i!=6){
+						var id= 'p'+ i + x;
+						var changeIt = document.getElementById(id);
+						changeIt.classList.toggle('hidden'); 
+					}
+				}
+				var id= 'pa' + x;
+				var changeIt = document.getElementById(id);
+				changeIt.classList.toggle('hidden'); 
+				var id= 'pb' + x;
+				var changeIt = document.getElementById(id);
+				changeIt.classList.toggle('hidden'); 
+
+				document.getElementById('div'+x).classList.toggle('col-xs-2');
+				document.getElementById('div'+x).classList.toggle('col-xs-3');
+				for(i=1;i<n+1;i++){
+					if(i==parseInt(x)) continue;
+					for(j=1;j<10;j++){
+						if(j!=3&&j!=4&&j!=6){
+							var id= 'p'+ j + i;
+							var changeIt = document.getElementById(id);
+							if(!changeIt.classList.contains('hidden'))
+							changeIt.classList.toggle('hidden'); 
+						}
+					}
+					//REALLY AWFULL CODING RIGHT HERE
+						var id= 'pa' + i;
+						changeIt = document.getElementById(id);
+						if(!changeIt.classList.contains('hidden'))
+						changeIt.classList.toggle('hidden'); 
+						id= 'pb' + i;
+						changeIt = document.getElementById(id);
+						if(!changeIt.classList.contains('hidden'))
+						changeIt.classList.toggle('hidden'); 
+						
+					if(document.getElementById('div'+i).classList.contains('col-xs-3')){
+						document.getElementById('div'+i).classList.toggle('col-xs-2');
+						document.getElementById('div'+i).classList.toggle('col-xs-3');
+					}
+
+				}
+			}
+			
+			function mySubmitFunction(){
+				console.log("submitting");
+			}
+			
+		</script>
+	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+
+	<body>
+		<head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"></head>
+			<br />
+			<div class="inner contact">
+                <!-- Form Area -->
+				<h4 class="col-xs-offset-1" style="color:#124274;"><b>1. Dados pessoais:</b></h4>
+				<!--<p class="col-xs-offset-1" style="margin-top: -6px !important;">Não te esqueças que terás de submeter o teu currículo antes de submeteres o formulário!</p>-->
+				
+                <div class="contact-form">
+                    <!-- Form -->
+					<form id='foo' method="post" onsubmit="mySubmitFunction()" enctype="multipart/form-data" name="test">
+                        <!-- Left Inputs -->
+                    <div class="col-xs-9 col-xs-offset-1 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+						<input type="text" name="name" id="name" required="required" class="form" placeholder="Nome"/>
+                    
+                        <!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+					</div>
+					<div class="col-xs-3 col-xs-offset-1 wow animated slideInRight" data-wow-delay=".5s">
+						<!-- Message -->
+						<input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
+						<!-- Subject -->
+
+						<select name="fc" id="fc" required="required" class="form" onchange="onchangeFC()">
+							<option value="" selected disabled>Faculdade</option>
+							<option value="1">Instituto Superior Técnico (IST)</option>
+						    <option value="2">Faculdade de Ciências da Universidade de Lisboa (FCUL)</option>
+						    <option value="3">Faculdade de Farmácia da Universidade de Lisboa (FFUL)</option>
+	
+						</select>
+					</div><!-- End Right Inputs -->
+					<div class="col-xs-3 wow animated slideInRight" data-wow-delay=".5s">
+						<!-- Message -->
+						<input type="number" name="phone" id="phone" placeholder="Nº de telemóvel"  class="form" required autocomplete="tel"/>
+						<!-- Subject -->
+						<input type="text" name="Nº" id="Nº" required="required" class="form" placeholder="Nº de estudante (Ex: istxxxxxx)" />
+					</div><!-- End Right Inputs -->
+					<div class="col-xs-3 wow animated slideInRight" data-wow-delay=".5s">
+						<!-- Message -->
+						<select  name="ano" id="ano" required="required" onchange="onchangeAno()" class="form"  >
+							<option value="" selected disabled>Ano</option>
+							<option value="1">1º Ano (Licenciatura)</option>
+						    <option value="2">2º Ano (Licenciatura)</option>
+						    <option value="3">3º Ano (Licenciatura)</option>
+						    <option value="4">4º Ano (Mestrado)</option>
+						    <option value="5">5º Ano (Mestrado)</option>
+						</select>
+						<!-- Subject -->
+						<select name="curso" id="curso" required="required" class="form" onchange="onchangeCurso()">
+							<option value="" selected disabled>Curso</option>
+							<option value="" disabled>Escolhe primeiro a faculdade</option>
+						</select>
+					</div><!-- End Right Inputs -->
+					
+                        <!-- Bottom Submit -->
+					<div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <!--<button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> -->
+					</div><!-- End Bottom Submit -->
+                        <!-- Clear -->
+                    <div class="clear"></div>
+         
+                </div><!-- End Contact Form Area -->
+            </div><!-- End Inner -->
+			<div class="col-xs-12 wow animated slideInLeft" style="	padding-left:5px !important;" data-wow-delay=".5s">
+			
+				<h4 class="col-xs-offset-1" style="color:#124274;"><b>2. Responde às seguintes perguntas:</b></h4>
+				
+			    <div class="col-xs-9 col-xs-offset-1 wow animated slideInLeft" data-wow-delay=".5s">
+					<p style="margin: 0 0 0 0 !important; color:#124274;"><b>Conta-nos o teu percurso académico.</b></p>
+					<textarea rows="2" style="overflow:hidden" id="perg1" name="perg1" class="form" required></textarea>
+					
+					<p style="margin: 0 0 0 0 !important; color:#124274;"><b>Qual o teu objectivo com a participação no evento?</b></p>
+					<textarea rows="2" style="overflow:hidden"  id="perg2" name="perg2"  class="form" required></textarea>
+				</div>
+			</div><!-- End Inner -->
+			<div class="col-xs-12 wow animated slideInLeft" style="	padding-left:5px !important;" data-wow-delay=".5s">
+				 <div class="col-xs-9 col-xs-offset-1 wow animated slideInLeft" data-wow-delay=".5s">
+					<p style="margin: 0 0 0 0 !important; color:#124274;"><b>Já participaste em algum evento do BEST? Se sim, assinala quais.</b></p>
+				</div>
+				<div class="col-xs-3 col-xs-offset-1 wow animated slideInRight" data-wow-delay=".5s">
+					<input type="checkbox" name="biv" id="biv" value="biv">
+					<label for="biv">BEST Inside View.</label><br>
+					<input type="checkbox" name="sc" id="sc" value="sc">
+					<label for="sc">Season Courses.</label><br>
+				</div>
+				<div class="col-xs-3 wow animated slideInRight" data-wow-delay=".5s">
+					<input type="checkbox" name="ebec" id="ebec" value="ebec">
+					<label for="ebec">EBEC.</label><br>
+					<input type="checkbox" name="btds" id="btds" value="btds">
+					<label for="btds">BEST Training Days.</label><br>
+				</div>
+				<div class="col-xs-3 wow animated slideInRight" data-wow-delay=".5s">
+					<input type="checkbox" name="lbec" id="Lbec" value="lbec">
+					<label for="lbec">LBEC.</label><br>
+					<input type="checkbox" name="outros" id="outros" value="outros">
+					<label for="outros">Outros.</label><br>
+				</div>
+			</div><!-- End Inner -->
+			
+			<div class="col-xs-12 wow animated slideInLeft" style="	padding-left:5px !important;" data-wow-delay=".5s">
+				<div class="col-xs-3 col-xs-offset-2 wow animated slideInRight" data-wow-delay=".5s">
+					<input type="number" name="media" id="media" class="form2" required>
+					<label style="color:#124274;"for="media">Média atual do curso.</label><br>
+				</div>
+				<div class="col-xs-3 col-xs-offset-1 wow animated slideInRight" data-wow-delay=".5s">
+					<input type="number" name="ects" id="ects" class="form2" required>
+					<label style="color:#124274;"for="ects">Nº médio de ECTS por  semestre.</label><br>
+				</div>
+
+			</div><!-- End Inner -->
+			<div class="col-xs-12 wow animated slideInLeft" style="	padding-left:5px !important;" data-wow-delay=".5s">
+				
+				<!--<h4 class="col-xs-offset-1" style="color:#124274;"><b>3. Faz upload do teu Curriculum Vitae:</b></h4>
+				<p class="col-xs-offset-1" style="margin-top: -6px !important;">Seleciona o teu currículo. Caso submetas o formulário mais do que uma vez, apenas o último ficheiro será considerado.</p>
+				
+					<input type="file" id="file" name="file[]" class="inputfile inputfile-1" />
+					<label class="col-xs-offset-1" for="file" id="upload"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Escolhe um ficheiro&hellip;</span></label><br><br>
+					
+				-->
+				<h4 class="col-xs-offset-1" style="color:#124274;"><b>3. Escolhe as tuas empresas por ordem de preferência:</b></h4>
+				<p style="margin-right:20%; margin-top: -6px !important;" class="col-xs-offset-1">Clica nos logos das empresas para obteres mais informação. Podes inscrever-te em empresas fora da tua área/ano (não tens limite máximo de empresas), mas as tuas chances de entrar serão menores.</p>
+			</div> 
+				
+		<div class="col-xs-10 wow animated slideInLeft" style="margin-top:8px;" id="Box" data-wow-delay=".5s">
+			<div class="col-xs-4 col-xs-offset-2 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<select id="cursos" class="form" onchange="checkOpt()">
+					<option value="" selected disabled>Cursos</option>
+					<option value="0">Todos os cursos</option>
+				</select>
+			</div>
+			<div class="col-xs-2 col-xs-offset-1 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<select id="anos" name="equipas" class="form" onchange="checkOpt()">
+				  <option value="" selected disabled>Ano</option>
+				  <option value="0">Todos os anos</option>
+				  <option value="1">1º Ano (Licenciatura)</option>
+				  <option value="2">2º Ano (Licenciatura)</option>
+				  <option value="3">3º Ano (Licenciatura)</option>
+				  <option value="4">4º Ano (Mestrado)</option>
+				  <option value="5">5º Ano (Mestrado)</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-10 wow animated slideInLeft" style="padding-left:0px !important;" id="Box" data-wow-delay=".5s">		
+			<div style="padding-left:50px;">
+				<div id="div0" class="just col-xs-3 col-xs-offset-4 wow animated slideInLeft border" >
+					<h5><b>Seleciona o curso e ano pretendidos para veres as nossas opções de empresas</b></h5>
+				</div>
+				
+				<div class="" id="carousel" data-wow-delay=".5s">
+					
+				</div>
+				
+				<div id="0div" class="hidden just col-xs-3 wow animated slideInLeft margin_f border" >
+					<h4><b>Oops!</b></h4><p> Não temos nenhuma empresa interessada neste curso e ano. Tenta ajustar os parâmetros para veres empresas da tua area.</p>
+				</div>
+			</div>
+			
+			<div class="col-xs-12 wow animated slideInLeft just"  style="margin-top:40px;" data-wow-delay=".5s">
+				<h4 class="col-xs-offset-1" style="color:#124274;"><b>4. Faz upload do comprovativo de pagamento da caução:</b></h4>
+				<p class="col-xs-offset-1" style="margin-right:3%; margin-top: -6px !important;">A caução tem o valor de 5€ e deverá ser paga para a referência <b>PT50 0010 0000 3869 5740 0011 4</b> com o nome <b>BEST Lisboa</b>. Esta caução será devolvida após a terminação do evento. <b>Podes optar por enviar o teu comprovativo mais tarde</b> para o email <b>insideview@best.tecnico.ulisboa.pt</b>, até o dia <b>9 de Março</b>. </p>
+				
+					<input type="file" id="file2" name="file[]" class="inputfile inputfile-1" />
+					<label class="col-xs-offset-1" for="file2" id="upload2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Escolhe um ficheiro&hellip;</span></label><br><br>
+				
+				
+				<h4 class="col-xs-offset-1" style="color:#124274;"><b>5. Aceita o regulamento do evento:</b></h4>
+				<p class="col-xs-offset-1" style="margin-top: -6px !important;">Podes ler o regulamento do evento para alunos do IST <b><a target="blank" href="BIV_IST_PT.pdf">aqui</a></b>, e para alunos da FCUL e FFUL <b><a target="blank" href="BIV_FCUL_PT.pdf">aqui</a></b>. Ao aceitar o regulamento também irás aceitar o uso dos teus dados no âmbito do BEST Inside View, segundo a GDPR.</p>
+				<input style="margin-left:8.3333333%;" type="checkbox" name="Reg" id="Reg" value="Reg">
+				<label for="Reg">Li e aceito o regulamento.</label><br>
+				
+				
+
+				<!--<label  class="col-xs-offset-1" id="upload"> <input type="file" id="file" name="file"/><br></label>
+                            <!-- Send Button -  style="background-color:#124274 !important;" -->
+				<input type="hidden" name="choices" value="" id="choices">
+				<input type="hidden" name="choices-names" value="" id="choices-names">
+				<button type="submit" id="botao" value="Submit" style="background:#124274 !important;" class="form-btn semibold">Submeter</button> 
+				<div class="col-xs-offset-5 col-xs-2" style="margin-top:10px;"><div class="hidden loader" id="spinner"></div></div><div class="col-xs-5" style="margin-top:25px;"><b><p id="text" style="margin-left:-20%; color:#124274;"></p></b></div>
+			</div>
+            </form>
+		</div><!-- End Bottom Submit -->
+					
+		</div><!-- End Left Inputs -->
+		
+		<div id="mother" class="col-xs-2 wow animated slideInLeft" style="margin-top:-60px !important;" data-wow-delay=".5s">
+			<div class="col-xs-12 wow animated slideInLeft" style="padding-left:0px !important;" id="Box" data-wow-delay=".5s">
+				<h5 class="" style="color:#124274;"><b>As tuas escolhas:</b></h5>
+				<!--<p  style="line-height: 100%;">Arrasta as imagens para alterar a ordem.</p>-->
+			</div>
+			
+			<div id="div_1"class="col-xs-9 wow animated slideInLeft border xs_corr sec_box" >
+				<div class="col-xs-6 xs_corr" >
+					<h5 style="color:#fff;" class="head"><b>1º</b></h5>
+				</div>
+				<div class="col-xs-6 xs_corr" >
+					<img class="img_size_cross head" onclick="Cross(1)" src="img/x.png">
+				</div>
+				<div class="col-xs-12" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
+					<img class="center img_size" name="" id="img_1" ondragstart="drag(event)" style="cursor:move" title="" draggable="true" src="">
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="relative fullwidth col-xs-12 footer" >
+
+		</div>
+			
+		<script id="speakersptl" type="text/template">
+			{{#empresas}}
+				<div id="div{{Id}}" class="hidden just col-xs-2 wow animated slideInLeft margin_f border" >
+					<input class="css-label lrg web-two-style" onclick="checkBox({{Id}})" type="checkbox" name="vehicle" id="C{{Id}}" value="{{Id}}"><br>
+					<img class="center img_size" id="p6{{Id}}" onclick="expand({{Id}})" title="{{Nome}}" src="img/{{Img}}">
+					<p id="p1{{Id}}" name="{{Nome}}" align="center" class="hidden" style="color:#124274;font-size: 150%">{{Nome}}</p>
+					<p id="p2{{Id}}" class="hidden"><b>Morada:</b> {{Morada}}</p>
+					<p id="p3{{Id}}" name="{{IST}} {{FCUL}} {{FFUL}}" class="hidden"><b>Cursos Preferidos:</b> {{IST}} {{FCUL}} {{FFUL}}</p>
+					<p id="p4{{Id}}" name="{{Anos:}}" class="hidden"><b>Anos Curriculares:</b> {{Anos:}}</p>
+					<p id="p7{{Id}}" class="hidden"><b>Website: </b><a href="{{Website}}" target="_blank">link.</a></p>
+					<p id="p8{{Id}}" name="{{Vagas}}" class="hidden"><b>Vagas:</b> {{Vagas}}</p>
+					<p id="p9{{Id}}" name="{{Refeicao}}" class="hidden"><b>Refeições:</b> {{Refeicao}}</p>
+					<p id="pa{{Id}}" name="{{Local}}" class="hidden"><b>Local:</b> {{Local}}</p>
+             		<p id="pb{{Id}}" name="{{Transporte}}" class="hidden"><b>Deslocação:</b> {{Transporte}}</p>
+					<p id="p5{{Id}}" class="hidden"><b>Descrição:</b> {{Descricao}}</p>
+				</div>
+			{{/empresas}}
+		</script>
+		
+		<input type="hidden" name="trigger" value="" id="trigger">
+		
+		<script type="text/javascript">
+			var jsonURL='http://best.tecnico.ulisboa.pt/insideview/data.json';
+			$(function(){
+				$.getJSON(jsonURL, function(data){
+					var template=$('#speakersptl').html();
+					var html=Mustache.to_html(template, data);
+					$('#carousel').html(html);
+				})
+			});
+		</script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			  <!-- Custom Theme JavaScript---------------------------------------------------------------------------------------------------------
+			  ------------------------------------------------------------------------------------------------------------------------------------->
+			  <script src=https://sheets.googleapis.com/$discovery/rest?version=v4></script>
+				<script type="text/javascript"
+				  src='https://www.google.com/jsapi?autoload={
+					"modules":[{
+					"name":"visualization",
+					"version":"1"
+					}]
+				  }'></script>
+		
+		
+		<script>
+	 SendRequest();
+	 var trigger=document.getElementById('trigger');
+	 var status=0;
+	 var status2=0;
+	 var first=document.getElementById('img_1');
+	 
+	 function SendRequest() {
+		  var queryString = encodeURIComponent('SELECT A');
+		  //document.getElementById("demo").innerHTML = queryString;
+		  var query = new google.visualization.Query(
+			'https://docs.google.com/spreadsheets/d/1XngoBIaeUTM6Zl0rAuNOxypXvKq2R7AGW6gRLYq0hSw/gviz/tq?gid=0&headers=1&tq=' + queryString);
+		  query.send(handleQueryResponse);
+		}
+
+	 function handleQueryResponse(response) {
+	  if (response.isError()) {
+			alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+			console.log("failed");
+			return;
+	  }
+	  var x = document.getElementById("cursos");
+	  var data = response.getDataTable();
+	  var rowInds = data.getSortedRows([{column: 0}]);
+		for (var i = 0; i < rowInds.length; i++) {
+		  var opt = document.createElement('option');
+		  opt.value = data.getValue(rowInds[i], 0);
+	      opt.text = data.getValue(rowInds[i], 0);
+		  x.add(opt);
+		}
+	 }
+
+
+	 </script>
+	 
+	 <script>
+	 function onchangeFC(){
+		var x = document.getElementById("fc");
+		var fc;
+		if(x.value=='1') fc='IST';
+		else if(x.value=='2') fc='FCUL';
+		else if(x.value=='3') fc='FFUL';
+		var queryString=encodeURIComponent('select A where B="'+fc+'"');
+		var query = new google.visualization.Query(
+			'https://docs.google.com/spreadsheets/d/1XngoBIaeUTM6Zl0rAuNOxypXvKq2R7AGW6gRLYq0hSw/gviz/tq?gid=0&headers=1&tq=' + queryString);
+		  query.send(handleQueryResponse2);
+		}
+
+	 function handleQueryResponse2(response) {
+	  if (response.isError()) {
+			alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+			document.getElementById("demo").innerHTML = 'failed';
+			return;
+	  }
+	  var x = document.getElementById("curso");
+	  for (i = x.options.length - 1 ; i >= 1 ; i--) {
+	    x.remove(i);
+	  }
+	  var data = response.getDataTable();
+	  var rowInds = data.getSortedRows([{column: 0}]);
+		for (var i = 0; i < rowInds.length; i++) {
+		  var opt = document.createElement('option');
+		  opt.value = data.getValue(rowInds[i], 0);
+	      opt.text = data.getValue(rowInds[i], 0);
+		  x.add(opt);
+		}
+	 }
+	 </script>
+	 
+	 
+	 <script>
+		function onchangeCurso(){
+			document.getElementById("cursos").value = document.getElementById("curso").value;
+			checkOpt();
+		}
+		function onchangeAno(){
+			document.getElementById("anos").value = document.getElementById("ano").value;
+			checkOpt();
+		}
+	 </script>
+	 
+	 <script>
+		function hideDiv(){
+			for(i=1; i<n+1; i++){
+				var div=document.getElementById("div"+i);
+				console.log(i)
+				if(div.classList.contains('hidden')==0){
+					div.classList.toggle('hidden');}
+			}		
+			return;
+		}
+		
+		function checkOpt(){
+			var c=document.getElementById("cursos");
+			var a=document.getElementById("anos");
+			var d=document.getElementById("div0");
+			var divo=document.getElementById("0div");
+			var z=false;
+			if(c.value!=""&&a.value!=""){
+				if(d.classList.contains('hidden')==0) d.classList.toggle('hidden');
+				hideDiv();
+				for(i=1; i<n+1; i++){
+					var x=document.getElementById('p3'+i);
+					var y=document.getElementById('p4'+i);
+					if(x.getAttribute("name").indexOf(c.value)>=0&&y.getAttribute("name").indexOf(a.value)>=0||c.value=='0'&&a.value=='0'||x.getAttribute("name").indexOf(c.value)>=0&&a.value=='0'||c.value=='0'&&y.getAttribute("name").indexOf(a.value)>=0){
+						var div=document.getElementById("div"+i);
+						div.classList.toggle('hidden');
+						z=true;
+					}
+				}
+				if(z){ if(divo.classList.contains('hidden')==0) divo.classList.toggle('hidden');}
+				else if(divo.classList.contains('hidden')!=0) divo.classList.toggle('hidden');
+			}
+		}
+	 </script>
+	 
+	 <script>
+		function checkBox(id){
+			var emp=document.getElementById('p6'+id);
+			if(document.getElementById('C'+id).checked==true){
+				for(i=1; i<divs+1;i++){
+					var current=document.getElementById('img_'+i);
+					if(current.getAttribute("src")==""){
+						current.src=emp.getAttribute("src");
+						current.setAttribute("name", id);
+						current.setAttribute("title", document.getElementById('p1'+id).getAttribute("name"));
+						increaseDiv();
+						updateChoices();
+						return;
+					}
+				}
+			}else{
+				for(i=1; i<divs+1;i++){
+					var current=document.getElementById('img_'+i);
+					if(current.getAttribute("src")==emp.getAttribute("src")){
+						current.src="";
+						current.setAttribute("name", "");
+						current.setAttribute("title", "");
+						orderBox();
+						return;
+					}
+				}
+			}
+			orderBox();
+		}
+		
+		function orderBox(){
+			for(i=1; i<divs+1;i++){
+				var current=document.getElementById('img_'+i);
+				if(current.getAttribute("src")==""){
+					for(j=i+1; j<divs+1; j++){
+						var current2=document.getElementById('img_'+j);
+						if(current2.getAttribute("src")!=""){
+							current.src=current2.getAttribute("src");
+							current.setAttribute("name", current2.getAttribute("name"));
+							current.setAttribute("title", current2.getAttribute("title"));
+							current2.src="";
+							current2.setAttribute("name", "");
+							current2.setAttribute("title", "");
+							break;
+						}
+					}
+				}
+			}
+			colapseDiv();
+			updateChoices();
+		}
+
+		function Cross(x){
+			var current=document.getElementById('img_'+x);
+			current.src="";
+			document.getElementById('C'+current.getAttribute("name")).checked=false;
+			current.setAttribute("name", "");
+			current.setAttribute("title", "");
+			orderBox();
+		}
+	 </script>
+	 
+	 <script>
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev, x) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			var nm=data.split("_");
+			var draged=document.getElementById('img_'+nm[1]);
+			var dragy=document.getElementById('img_'+x);
+			var place_img=draged.getAttribute("src");
+			var place_val=draged.getAttribute("name");
+			var place_title=draged.getAttribute("title");
+			draged.src=dragy.getAttribute("src");
+			draged.setAttribute("name", dragy.getAttribute("name"));
+			draged.setAttribute("title", dragy.getAttribute("title"));
+			dragy.setAttribute("name", place_val);
+			dragy.setAttribute("title", place_title);
+			dragy.src=place_img;
+			updateChoices();
+		}
+	 </script>
+
+	<script>
+		function increaseDiv() {
+			//check for hidden divs first:
+			for(i=1; i<divs+1;i++){
+				if(document.getElementById('div_'+i).classList.contains('hidden')){
+					document.getElementById('div_'+i).classList.toggle('hidden');
+					return;
+				}
+			}
+			var next=divs+1;
+			var next2=next+1;
+			var current=document.getElementById('mother');
+			current.insertAdjacentHTML('beforeend', '</div><div id="div_'+next+'" class="col-xs-9 wow animated slideInLeft border xs_corr sec_box" ><div class="col-xs-6 xs_corr" ><h5 style="color:#fff;" class="head"><b>'+next+'º</b></h5></div><div class="col-xs-6 xs_corr" ><img class="img_size_cross head" onclick="Cross('+next+')" src="img/x.png"></div><div class="col-xs-12" ondrop="drop(event, '+next+')" ondragover="allowDrop(event)"><img class="center img_size"  name="" id="img_'+next+'" ondragstart="drag(event)" style="cursor:move" title="" draggable="true" src=""></div></div></div>');
+			divs=next;
+		}
+			
+		function colapseDiv() {
+			for(i=1; i<divs;i++){
+				if(document.getElementById('img_'+i).getAttribute("name")==""){
+					if(document.getElementById('img_'+(i+1)).getAttribute("name")==""&&!document.getElementById('div_'+(i+1)).classList.contains('hidden'))
+						document.getElementById('div_'+(i+1)).classList.toggle('hidden');
+				}
+			}
+		}
+		
+		function updateChoices(){
+			var ch=document.getElementById("choices");
+			var chN=document.getElementById("choices-names");
+			var str="";
+			var strN="";
+			for(i=1; i<divs+1;i++){
+				if(document.getElementById('img_'+(i)).getAttribute("name")!=""){
+					if(str!=""){ str=str+"/ "; strN=strN+"/ ";}
+					str=str+document.getElementById('img_'+(i)).getAttribute("name");
+					strN=strN+document.getElementById('img_'+(i)).getAttribute("title");
+				}
+			}
+			ch.value=str;
+			chN.value=strN;
+		}
+	
+	</script>
+	
+	<script src="js/custom-file-input.js"></script>
+  	<script src='js/google-sheet.js'></script>
+<!--GOOGLE ANALYTICS-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84007326-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+  
+</body>
+</html>

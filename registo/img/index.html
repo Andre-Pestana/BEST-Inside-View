@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form Bootstrap 3</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+	<div class="header">
+		<img class="center img_size" src="img/banner.png">
+	</div>
+  
+</head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.0/mustache.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+			var n= 22;
+			
+			function expand(x) {
+				var i, j;
+				for(i=1; i<6; i++){
+					var id= 'p'+ i + x;
+					var changeIt = document.getElementById(id);
+					changeIt.classList.toggle('hidden');  
+				}
+				for(i=1;i<23;i++){
+					if(i==parseInt(x)) continue;
+					for(j=1;j<6;j++){
+						var id= 'p'+ j + i;
+						var changeIt = document.getElementById(id);
+						if(!changeIt.classList.contains('hidden'))
+							changeIt.classList.toggle('hidden');  
+					}
+				}
+			}
+		</script>
+	
+<body>
+  <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"></head>
+<br />
+<div class="inner contact">
+                <!-- Form Area -->
+				<h4 class="col-xs-offset-1" style="color:#124274;"><b>1. Preenche a tua informação:</b></h4>
+				<p class="col-xs-offset-1">Não te esqueças que tens de submeter o teu currículo!</p>
+				
+                <div class="contact-form">
+                    <!-- Form -->
+                        <!-- Left Inputs -->
+                    <div class="col-xs-9 col-xs-offset-1 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+						<input type="text" name="name" id="name" required="required" class="form" placeholder="Name"/>
+                    
+                        <!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+					</div>
+					<div class="col-xs-3 col-xs-offset-1 wow animated slideInRight" data-wow-delay=".5s">
+						<!-- Message -->
+						<input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
+						<!-- Subject -->
+						<select name="fc" id="fc" required="required" class="form" onchange="onchangeFC()">
+							<option value="" selected disabled>Faculdade</option>
+							<option value="1">Instituto Superior Técnico (IST)</option>
+						    <option value="2">Faculdade de Ciências da Universidade de Lisboa (FCUL)</option>
+						    <option value="3">Faculdade de Farmácia da Universidade de Lisboa (FFUL)</option>
+	
+						</select>
+					</div><!-- End Right Inputs -->
+					<div class="col-xs-3 wow animated slideInRight" data-wow-delay=".5s">
+						<!-- Message -->
+						<input type="number" name="phone" id="phone" placeholder="Nº de telemóvel"  class="form" required autocomplete="tel"/>
+						<!-- Subject -->
+						<input type="text" name="StudentN" id="StudentN" required="required" class="form" placeholder="Nº de estudante" />
+					</div><!-- End Right Inputs -->
+					<div class="col-xs-3 wow animated slideInRight" data-wow-delay=".5s">
+						<!-- Message -->
+						<select  name="ano" id="ano" required="required" onchange="onchangeAno()" class="form"  >
+							<option value="" selected disabled>Ano</option>
+							<option value="1">1º Ano (Licenciatura)</option>
+						    <option value="2">2º Ano (Licenciatura)</option>
+						    <option value="3">3º Ano (Licenciatura)</option>
+						    <option value="4">4º Ano (Mestrado)</option>
+						    <option value="5">5º Ano (Mestrado)</option>
+						</select>
+						<!-- Subject -->
+						<select name="curso" id="curso" required="required" class="form" onchange="onchangeCurso()">
+							<option value="" selected disabled>Curso</option>
+							<option value="" disabled>Escolhe primeiro a faculdade</option>
+						</select>
+					</div><!-- End Right Inputs -->
+					
+                        <!-- Bottom Submit -->
+					<div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <!--<button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> -->
+					</div><!-- End Bottom Submit -->
+                        <!-- Clear -->
+                    <div class="clear"></div>
+         
+                </div><!-- End Contact Form Area -->
+            </div><!-- End Inner -->
+			<div class="col-xs-12 wow animated slideInLeft" data-wow-delay=".5s">
+				<h4 class="col-xs-offset-1" style="color:#124274;"><b>2. Escolhe as tuas empresas!</b></h4>
+				<p class="col-xs-offset-1">Clica nos logos para obteres mais informação.</p>
+			</div>
+				
+		<div class="col-xs-9 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<div class="col-xs-4 col-xs-offset-2 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+					<select id="cursos" class="form" onchange="checkOpt()">
+						<option value="" selected disabled>Cursos</option>
+						<option value="0">Todos os cursos</option>
+					</select>
+				</div>
+				<div class="col-xs-2 col-xs-offset-1 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+					<select id="anos" name="equipas" class="form" onchange="checkOpt()">
+					  <option value="" selected disabled>Ano</option>
+					  <option value="0">Todos os anos</option>
+					  <option value="1">1º Ano (Licenciatura)</option>
+					  <option value="2">2º Ano (Licenciatura)</option>
+					  <option value="3">3º Ano (Licenciatura)</option>
+					  <option value="4">4º Ano (Mestrado)</option>
+					  <option value="5">5º Ano (Mestrado)</option>
+					</select>
+				</div>
+			<div class="" id="carousel" data-wow-delay=".5s">
+			</div>
+		</div><!-- End Left Inputs -->
+		
+		<div class="col-xs-3 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+			<div class="col-xs-12 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<h5 class="col-xs-offset-1" style="color:#124274;"><b>As tuas escolhas:</b></h5>
+			</div>
+			
+			<div class="col-xs-9 wow animated slideInLeft border xs_corr" >
+				<div class="col-xs-6 xs_corr" >
+					<h5 style="color:#124274;" class="head"><b>1º</b></h5>
+				</div>
+				<div class="col-xs-6 xs_corr" >
+					<img class="img_size_cross head" onclick="" src="img/x.png">
+				</div>
+			</div>
+			
+			<div class="col-xs-10 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<div class="col-xs-9 wow animated slideInLeft border" >
+					<h5 style="color:#124274;"><b>2º</b></h5>
+				</div>
+			</div>
+			<div class="col-xs-10 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<div class="col-xs-9 wow animated slideInLeft border" >
+					<h5 style="color:#124274;"><b>3º</b></h5>
+				</div>
+			</div>
+			<div class="col-xs-10 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<div class="col-xs-9 wow animated slideInLeft border" >
+					<h5 style="color:#124274;"><b>4º</b></h5>
+				</div>
+			</div>
+			<div class="col-xs-10 wow animated slideInLeft" id="Box" data-wow-delay=".5s">
+				<div class="col-xs-9 wow animated slideInLeft border" >
+					<h5 style="color:#124274;"><b>5º</b></h5>
+				</div>
+			</div>
+		</div>
+			
+		<script id="speakersptl" type="text/template">
+			{{#empresas}}
+				<div id="div{{Id}}" class="hidden col-xs-4 wow animated slideInLeft border" >
+					<input class="css-label lrg web-two-style" type="checkbox" name="vehicle" value="{{Id}}"><br>
+					<img class="center img_size" onclick="expand({{Id}})" src="img/{{Img}}">
+					<p id="p1{{Id}}" name="{{Nome}}" align="center" class="hidden" style="color:#124274;font-size: 150%">{{Nome}}</p>
+					<p id="p2{{Id}}" class="hidden"><b>Morada:</b> {{Morada}}</p>
+					<p id="p3{{Id}}" name="{{IST}} {{FCUL}} {{FFUL}}" class="hidden"><b>Cursos Preferidos:</b> {{IST}} {{FCUL}} {{FFUL}}</p>
+					<p id="p4{{Id}}" name="{{Anos:}}" class="hidden"><b>Anos Curriculares:</b> {{Anos:}}</p>
+					<p id="p5{{Id}}" class="hidden"><b>Descrição:</b> {{Descricao}}</p>
+				</div>
+			{{/empresas}}
+		</script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$.getJSON('http://best.tecnico.ulisboa.pt/data.json', function(data){
+					var template=$('#speakersptl').html();
+					var html=Mustache.to_html(template, data);
+					$('#carousel').html(html);
+				})
+			});
+		</script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			  <!-- Custom Theme JavaScript---------------------------------------------------------------------------------------------------------
+			  ------------------------------------------------------------------------------------------------------------------------------------->
+			  <script src=https://sheets.googleapis.com/$discovery/rest?version=v4></script>
+				<script type="text/javascript"
+				  src='https://www.google.com/jsapi?autoload={
+					"modules":[{
+					"name":"visualization",
+					"version":"1"
+					}]
+				  }'></script>
+		
+		
+		<script>
+	 SendRequest();
+	 
+	 function SendRequest() {
+		  var queryString = encodeURIComponent('SELECT A');
+		  //document.getElementById("demo").innerHTML = queryString;
+		  var query = new google.visualization.Query(
+			'https://docs.google.com/spreadsheets/d/1XngoBIaeUTM6Zl0rAuNOxypXvKq2R7AGW6gRLYq0hSw/gviz/tq?gid=0&headers=1&tq=' + queryString);
+		  query.send(handleQueryResponse);
+		}
+
+	 function handleQueryResponse(response) {
+	  if (response.isError()) {
+			alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+			console.log("failed");
+			return;
+	  }
+	  var x = document.getElementById("cursos");
+	  var data = response.getDataTable();
+	  var rowInds = data.getSortedRows([{column: 0}]);
+		for (var i = 0; i < rowInds.length; i++) {
+		  var opt = document.createElement('option');
+		  opt.value = data.getValue(rowInds[i], 0);
+	      opt.text = data.getValue(rowInds[i], 0);
+		  x.add(opt);
+		}
+	 }
+
+
+	 </script>
+	 
+	 <script>
+	 function onchangeFC(){
+		var x = document.getElementById("fc");
+		var fc;
+		if(x.value=='1') fc='IST';
+		else if(x.value=='2') fc='FCUL';
+		else if(x.value=='3') fc='FFUL';
+		var queryString=encodeURIComponent('select A where B="'+fc+'"');
+		var query = new google.visualization.Query(
+			'https://docs.google.com/spreadsheets/d/1XngoBIaeUTM6Zl0rAuNOxypXvKq2R7AGW6gRLYq0hSw/gviz/tq?gid=0&headers=1&tq=' + queryString);
+		  query.send(handleQueryResponse2);
+		}
+
+	 function handleQueryResponse2(response) {
+	  if (response.isError()) {
+			alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+			document.getElementById("demo").innerHTML = 'failed';
+			return;
+	  }
+	  var x = document.getElementById("curso");
+	  for (i = x.options.length - 1 ; i >= 1 ; i--) {
+	    x.remove(i);
+	  }
+	  var data = response.getDataTable();
+	  var rowInds = data.getSortedRows([{column: 0}]);
+		for (var i = 0; i < rowInds.length; i++) {
+		  var opt = document.createElement('option');
+		  opt.value = data.getValue(rowInds[i], 0);
+	      opt.text = data.getValue(rowInds[i], 0);
+		  x.add(opt);
+		}
+	 }
+	 </script>
+	 
+	 
+	 <script>
+		function onchangeCurso(){
+			document.getElementById("cursos").value = document.getElementById("curso").value;
+			checkOpt();
+		}
+		function onchangeAno(){
+			document.getElementById("anos").value = document.getElementById("ano").value;
+			checkOpt();
+		}
+	 </script>
+	 
+	 <script>
+		function hideDiv(){
+			for(i=1; i<n+1; i++){
+				var div=document.getElementById("div"+i);
+				if(div.classList.contains('hidden')==0){
+					div.classList.toggle('hidden');
+					console.log('hi');}
+			}		
+			return;
+		}
+		
+		
+		function checkOpt(){
+			var c=document.getElementById("cursos");
+			var a=document.getElementById("anos");
+			if(c.value!=""&&a.value!=""){
+				hideDiv();
+				for(i=1; i<n+1; i++){
+					var x=document.getElementById('p3'+i);
+					var y=document.getElementById('p4'+i);
+					if(x.getAttribute("name").indexOf(c.value)>=0&&y.getAttribute("name").indexOf(a.value)>=0||c.value=='0'&&a.value=='0'||x.getAttribute("name").indexOf(c.value)>=0&&a.value=='0'||c.value=='0'&&y.getAttribute("name").indexOf(a.value)>=0){
+						var div=document.getElementById("div"+i);
+						div.classList.toggle('hidden'); 
+					}
+				}
+			}
+		}
+	 </script>
+<!--
+	<script>
+		var iDiv = document.createElement('div');
+		iDiv.id = 'block';
+		iDiv.className = 'block';
+		document.getElementsByTagName('body')[0].appendChild(iDiv);
+
+		iDiv.innerHTML = "I'm the first div";
+
+		// Now create and append to iDiv
+		var innerDiv = document.createElement('div');
+		innerDiv.className = 'block-2';
+
+		// The variable iDiv is still good... Just append to it.
+		iDiv.appendChild(innerDiv);
+		innerDiv.innerHTML = "I'm the inner div";
+	</script>-->
+  
+  
+</body>
+</html>

@@ -1,0 +1,111 @@
+{ "empresas": [
+ {
+   "Id": 1,
+   "Nome": "BNP Paribas",
+   "Morada": "Torre Ocidente – Rua Galileu Galilei, nº 2 13º Piso, 1500-392 Lisboa, Portugal",
+   "Img": "bnp.jpg",
+   "IST": "Engenharia Naval e Oceânica (LENO)(MENO), Engenharia Eletrónica (LEE)(MEE), Engenharia Geológica e de Minas (LEGM)(MEGME), Engenharia e Gestão Industrial (LEGI)(MEGI), Engenharia Informática e de Computadores (LEIC)(MEIC), Engenharia de Telecomunicações e Informática (LETI)(METI), Matemática Aplicada e Computadores (LMAC), Arquitetura (MA), Engenharia Aeroespacial (MEAer), Engenharia do Ambiente (MEAmbi), Engenharia Biológica (MEBiol), Engenharia Biomédica (MEBiom), Engenharia Civil (MEC), Engenharia Eletrotécnica e de Computadores (MEEC), Engenharia Física Tecnológica (MEFT), Engenharia de Materiais (MEM), Engenharia Mecânica (MEMec), Engenharia Química (MEQ), Bioengenharia e Nanossistemas (MBioNano), Biotecnologia (MBiotec), Engenharia Farmacêutica (MEFarm), Engenharia e Gestão da Energia (MEGE), Engenharia de Petróleos (MEP), Engenharia de Sistemas de Transporte (MEST), Informação e Sistemas Empresariais (MISE), Matemática e Aplicações (MMA), Microbiologia (Microbio), Planeamento e Operação de Transportes (MPOT), Proteção e Segurança Radiológica (MPSR), Química (MQ), Segurança de Informação e Direito no Ciberespaço (MSIDC), Urbanismo e Ordenamento do Território (MUOT)",
+   "FCUL": "Engenharia Biomédica e Biofísica (Mestrado Integrado), Engenharia da Energia e do Ambiente (Mestrado Integrado), Engenharia Física (Mestrado Integrado), Bioquímica ((Licenciatura))(Mestrado), Engenharia Geoespacial (Licenciatura)(Mestrado), Engenharia Informática ((Licenciatura))(Mestrado), Física (Licenciatura)(Mestrado), Geologia (Licenciatura)(Mestrado), Matemática (Licenciatura)(Mestrado), Química Tecnológica (Licenciatura)(Mestrado), Biologia (Licenciatura), Estatística Aplicada (Licenciatura), Matemática Aplicada (Licenciatura), Meteorologia, Oceanografia e Geofísica (Licenciatura), Química (Licenciatura)(Mestrado), Tecnologias da Informação (Licenciatura), Bioestatística (Mestrado), Bioinformática e Biologia Computacional (Mestrado), Biologia da Conservação (Mestrado), Biologia dos Recursos Vegetais (Mestrado), Biologia Evolutiva e do desenvolvimento (Mestrado), Biologia Humana e Ambiente (Mestrado), Biologia Molecular e Genética (Mestrado), Ciências do Mar (Mestrado), Ciências Geofísicas (Mestrado), Ecologia e Gestão Ambiental (Mestrado), Ecologia Marinha (Mestrado), Engenharia Geográfica (Mestrado), Estatística e Investigação Operacional (Mestrado), Geologia Aplicada (Mestrado), Geologia do Ambiente, Riscos Geológico e Ordenamento do Território (Mestrado), Geologia Económica (Mestrado), Gestão de Informação (Mestrado), Informática (Mestrado), Matemática Aplicada à Economia e à Gestão (Mestrado), Matemática Financeira (Mestrado), Matemática Para Professores (Mestrado), Microbiologia (Mestrado), Microbiologia Aplicada (Mestrado), Segurança Informática (Mestrado), Sistemas de Informação Geográfica - Tecnologias e Aplicações (MSIG-TA)",
+   "FFUL": "",
+   "Anos:": "4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "www.bnpparibas.pt",
+   "Descricao": ""
+  },
+  {
+   "Id": 2,
+   "Nome": "EY",
+   "Morada": "Avenida da República, 90 - 3º, 1649-024 Lisboa",
+   "Img": "ey.jpg",
+   "IST": "Engenharia Eletrónica (LEE)(MEE), Engenharia Informática e de Computadores (LEIC)(MEIC), Engenharia de Telecomunicações e Informática (LETI)(METI), Matemática Aplicada e Computadores (LMAC), Engenharia Aeroespacial (MEAer), Engenharia Eletrotécnica e de Computadores (MEEC), Engenharia Física Tecnológica (MEFT), Informação e Sistemas Empresariais (MISE), Matemática e Aplicações (MMA), Segurança de Informação e Direito no Ciberespaço (MSIDC)",
+   "FCUL": "Engenharia Informática ((Licenciatura))(Mestrado), Matemática (Licenciatura)(Mestrado), Estatística Aplicada (Licenciatura), Matemática Aplicada (Licenciatura), Tecnologias da Informação (Licenciatura), Bioestatística (Mestrado), Bioinformática e Biologia Computacional (Mestrado), Estatística e Investigação Operacional (Mestrado), Informática (Mestrado), Matemática Aplicada à Economia e à Gestão (Mestrado), Matemática Financeira (Mestrado), Segurança Informática (Mestrado)",
+   "FFUL": "",
+   "Anos:": "1º Ano (Licenciatura), 2º Ano (Licenciatura), 3º Ano (Licenciatura), 4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "http://www.ey.com",
+   "Descricao": "A EY é uma organização global, presente em 150 países com 250.000 profissionais que partilham os mesmos valores e objetivos, operando segundo os mais rigorosos padrões de excelência profissional e integridade. Com uma oferta integrada de serviços, a EY trabalha de acordo com um modelo operacional verdadeiramente integrado, que utiliza em todo o mundo os mesmos procedimentos e ferramentas tecnológicas, assegurando consistência e qualidade no serviço ao cliente. Norteada pelo propósito empresarial “Building a Better Working World”, a EY tem um papel importante na construção de um melhor mundo de negócios, quer junto dos seus colaboradores, clientes ou comunidades onde se insere.Em Portugal, a EY tem uma estrutura composta por aproximadamente 1.000 pessoas e todos os anos recrutamos um elevado número de jovens graduados e viabilizamos a sua carreira. Para tal, procuramos pessoas que demonstram integridade, espírito de equipa, coragem para liderar e que se encontrem motivadas para trabalhar num ambiente internacional."
+ },
+ {
+   "Id": 3,
+   "Nome": "Deloitte",
+   "Morada": "Avenida Engenheiro Duarte Pacheo n°7",
+   "Img": "deloitte.jpg",
+   "IST": "Engenharia Informática e de Computadores (MEIC), Engenharia Eletrotécnica e de Computadores (MEEC)",
+   "FCUL": "Engenharia Informática ((Licenciatura))(Mestrado)",
+   "FFUL": "",
+   "Anos:": " 4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "https://www2.deloitte.com/pt/pt.html",
+   "Descricao": ""
+  },
+ {
+   "Id": 4,
+   "Nome": "Novabase",
+   "Morada": "Av. D. João II, nº34 Parque das Nações 1998-031 Lisboa",
+   "Img": "novabase.jpg",
+   "IST": "Engenharia Informática e de Computadores (LEIC)(MEIC), Engenharia Eletrotécnica e de Computadores (MEEC)",
+   "FCUL": "Engenharia Informática ((Licenciatura))(Mestrado)",
+   "FFUL": "",
+   "Anos:": "1º Ano (Licenciatura), 2º Ano (Licenciatura), 3º Ano (Licenciatura), 4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "http://www.novabase.pt",
+   "Descricao": "Este tipo de iniciativa permite à Novabase proporcionar uma experiência única aos estudantes, mostrando-lhes uma realidade que normalmente não experienciam durante os seus cursos, e que os pode ajudar a orientar o resto do seu percurso académico e ambições profissionais futuras. É também uma oportunidade única para darmos a conhecer as nossas áreas específicas de atuação, muitas vezes desconhecidas de quem está ainda no meio académico."
+ },
+ {
+   "Id": 5,
+    "Nome": "Banco ATLANTICO-Europa",
+   "Morada": "Avenida da Liberdade nº 259 - Lisboa",
+   "Img": "beuropa.jpg",
+   "IST": "Engenharia Informática e de Computadores (LEIC)(MEIC), Engenharia de Telecomunicações e Informática (LETI)(METI), Matemática Aplicada e Computadores (LMAC), Engenharia Eletrotécnica e de Computadores (MEEC), Matemática e Aplicações (MMA)",
+   "FCUL": "Engenharia Informática ((Licenciatura))(Mestrado), Matemática (Licenciatura)(Mestrado), Estatística Aplicada (Licenciatura), Matemática Aplicada (Licenciatura), Tecnologias da Informação (Licenciatura), Estatística e Investigação Operacional (Mestrado), Informática (Mestrado), Matemática Aplicada à Economia e à Gestão (Mestrado), Matemática Financeira (Mestrado), Segurança Informática (Mestrado)",
+   "FFUL": "",
+   "Anos:": "1º Ano (Licenciatura), 2º Ano (Licenciatura), 3º Ano (Licenciatura), 4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "https://www.atlantico.eu",
+   "Descricao": "O Banco ATLANTICO-Europa tem procurado deste o seu lançamento em 2009, estabelecer pontes com as universidades com o objectivo de criar contextos que aproximem o mundo académico do mundo profissional, proporcionando aos alunos a possibilidade de terem uma visão prática do dia-a-dia das equipas/departamentos e à instituição percepcionar em “1ª mão” o que é hoje valorizado pela comunidade estudantil, quais os seus receios e expectativas, no momento em que se prepraram para uma nova fase da sua vida.Tal tem-se materializado não só na participação em iniciativas que possam trazer a universidade para “dentro” da empresa (como é exemplo do BEST inside View, em que o estudante, acompanhado por um mentor, acompanha um dia na vida de um dos nossos departamentos e tem oportunidade de conhecer os desafios actuais e futuros, os sistemas e a equipa - e de que forma as diferentes pessoas contribuem para gerar valor, mas também de \"sentir\" um pouco a cultura organizacional e o ambiente de trabalho). Em paralelo, temos igualmente promovido estágios que permitam, de forma mais prolongada, integrar estudantes em equipas de  projectos."
+ },
+ {
+   "Id": 6,
+   "Nome": "AdNovum Portugal",
+   "Morada": "Campo Grande 378, 1º andar, 1700-097 Lisboa",
+   "Img": "adnovum.jpg",
+   "IST": "Engenharia Informática e de Computadores (LEIC)(MEIC), Engenharia de Telecomunicações e Informática (LETI)(METI), Matemática Aplicada e Computadores (LMAC), Engenharia Eletrotécnica e de Computadores (MEEC), Matemática e Aplicações (MMA)",
+   "FCUL": "Engenharia Informática ((Licenciatura))(Mestrado), Matemática (Licenciatura)(Mestrado), Estatística Aplicada (Licenciatura), Matemática Aplicada (Licenciatura), Tecnologias da Informação (Licenciatura), Estatística e Investigação Operacional (Mestrado), Informática (Mestrado), Matemática Aplicada à Economia e à Gestão (Mestrado), Matemática Financeira (Mestrado), Segurança Informática (Mestrado)",
+   "FFUL": "",
+   "Anos:": "1º Ano (Licenciatura), 2º Ano (Licenciatura), 3º Ano (Licenciatura), 4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "https://www.adnovum.ch/",
+   "Descricao": ""
+ },
+ {
+   "Id": 7,
+   "Nome": "JETsj - Geotecnia, Lda",
+   "Morada": "Rua Julieta Ferrão, nº 12 - Escritório 1501, 1600-131 Lisboa",
+   "Img": "jet.jpg",
+   "IST": "Engenharia Civil (MEC)",
+   "FCUL": "",
+   "FFUL": "",
+   "Anos:": "4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "www.jetsj.com",
+   "Descricao": ""
+ },
+ {
+   "Id": 8,
+   "Nome": "Skyline Communicatons",
+   "Morada": "Skyline CommunicationsTorre ZenAv. Dom João II, n° 41 - 11° Piso 1990-083 Lisboa",
+   "Img": "skyline.jpg",
+   "IST": "Engenharia Informática e de Computadores (LEIC)(MEIC), Engenharia de Telecomunicações e Informática (LETI)(METI), Engenharia Eletrotécnica e de Computadores (MEEC)",
+   "FCUL": "Engenharia Informática ((Licenciatura))(Mestrado), Informática (Mestrado)",
+   "FFUL": "",
+   "Anos:": "4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "http://www.skyline.be",
+   "Descricao": "https://www.youtube.com/watch?v=GGDkQrUOYSg Skyline Communications is the global leading supplier of end-to-end multi-vendor network management and OSS solutions for the broadcast, satellite, cable, telco and mobile industry. Our flagship DataMiner® network management platform, which has received various prestigious awards, enables end-to-end integration of the most complex technical ecosystems and has been deployed by leading operators around the world.At Skyline Communications everything revolves around innovation. The company continuously invests in software research and development, striving to make more intelligent software applications, to assist its customers in driving down their operational cost while increasing the quality of their services.Skyline Communications is a fully independent corporation with no potential conflicting activities. Our new low-energy head office respects the environment and reflects our vision on sustainable responsible business.The Lisbon office of Skyline Communications is located in the Parque das Nações, on the 11th floor of the awarded Zen Tower building, which features a harmonious, balanced and transparent design. The glass-surrounded office offers a fantastic wide-open view of the river and the city.In an atmosphere of cooperation and empowerment, our DataMiner team in Lisbon share inspiration and motivation to lead you towards a better and brighter future, personally and professionally. Teamwork is king here. Spending time together around the lunch table every day, playing sports and welcoming the weekend with an after-work drink on the balcony are some of our team building activities.Come spend a day with us!"
+ },
+ {
+   "Id": 9,
+   "Nome": "Talkdesk",
+   "Morada": "Rua Tierno Galvan, Torre 3, 15º piso",
+   "Img": "talkdesk.jpg",
+   "IST": "Engenharia Informática e de Computadores (LEIC)(MEIC), Engenharia de Telecomunicações e Informática (LETI)(METI), Engenharia Eletrotécnica e de Computadores (MEEC)",
+   "FCUL": "Engenharia Informática ((Licenciatura))(Mestrado), Informática (Mestrado)",
+   "FFUL": "",
+   "Anos:": "1º Ano (Licenciatura), 2º Ano (Licenciatura), 3º Ano (Licenciatura), 4º Ano (Mestrado), 5º Ano (Mestrado)",
+   "Website": "https://www.talkdesk.com/",
+   "Descricao": "https://youtu.be/u1ql2s6-Io4"
+ }
+]
+}
