@@ -70,388 +70,461 @@
 	<!-- Header
     ================================================== -->
 	<header id="nino-header">
-		<div id="nino-headerInner" class="text-center">
-			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
-				<div class="container">
-
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-							data-target="#nino-navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="../index.html"></a>
-					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="nino-menuItem pull-right">
-						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
-							<ul class="nav navbar-nav">
-								<li onclick="goTO('../index.html')"><a href="">Home </a></li>
-								<li onclick="goTO('../covid/index.html')"><a href="">COVID-19</a></li>
-								<li onclick="goTO('../about.html')"><a href="">Sobre Nós</a></li>
-								<li onclick="goTO('../onechallenge/index.html')"><a href="">One Challenge</a></li>
-								<li onclick="goTO('../LEoE/index.html')"><a href="">LEoE</a></li>
-								<!--<li onclick="goTO('./BESTOn/index.html')"><a href="">BESTON</a></li>-->
-								<li onclick="goTO('../ebec2021/index.html')"><a href="">EBEC</a></li>
-								<li class="active" onclick="goTO('./index.html')"><a href="#nino-header">BIV
-										<span class="sr-only">(current)</span></a></li>
-								<!--<li onclick="goTO('../courses/index.html')"><a href="">BEST Courses</a></li>-->
-								<li onclick="goTO('../team/index.html')"><a href="">Direção</a></li>
-								<li onclick="goTO('../recruitment/index.html')"><a href="">Recrutamento</a></li>
-								<!--<li onclick="goTO('./registo/index.html')"><a href="">Registo BIV</a></li> -->
-								<li onclick="goTO('./en.html')"><a href=""><img src="images/eng_flag.png"
-											style="height:15px;"></a></li>
-								<script>
-									function goTO(link) {
-										window.open(link, "_self");
-									}
-								</script>
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</div>
-				</div><!-- /.container-fluid -->
-			</nav>
-			<img src="images/BIV2020/BIV_Banner.png">
+		<div id="nino-headerInner" class="">
+			<div class="our-navbar">
+				<a href="https://best.tecnico.ulisboa.pt/">
+					<img class="best-logo"src="./images/banners/BESTLisbon.png"></img>
+				</a>
+				<a href="./en.html">
+					<img class="eng-logo" src="./images/eng_flag.png">
+				</a>
+			</div>
+			<img src="images/BIV2021/Banner 2021.png">
 		</div>
 	</header>
 	<!--/#header-->
 
-	<!-- Counting 
-	================================================== -->
-	<!--<section id="nino-counting">
-		<div class="container text-center">
-			<h2 class="nino-sectionHeading" style="color: #fff; margin-bottom: -20px;">Inscreve-te nos inside days!
-			</h2>
-			<div class="row">
-				<div class="col-md-2 col-sm-6 item">
-					<div id="days" class="number"></div>
-					<div class="text">dias</div>
-				</div>
-				<div class="col-md-2 col-sm-6 item">
-					<div id="hours" class="number"></div>
-					<div class="text">horas</div>
-				</div>
-				<div class="col-md-2 col-sm-6 item">
-					<div id="minutes" class="number"></div>
-					<div class="text">minutos</div>
-				</div>
-				<div class="col-md-2 col-sm-6 item">
-					<div id="seconds" class="number"></div>
-					<div class="text">segundos</div>
-				</div>
-				<div class="col-md-4 col-sm-6 item col-sm-offset-3 col-md-offset-0"
-					onclick="goTO('./insideview/index.html')">
-					<a href="https://forms.gle/SAtiTSUZ88jekjdq6">
-						<div class="text text-signup">
-							<p style="padding-top:7%; padding-bottom:0%; color:White; font-size: 20px;">Inscreve-te aqui
-							</p>
+	
+	<!--/#nino-counting-->
+	<!--
+
+		<section id="nino-counting" class="pt-4">
+			<div class="containe text-center" style="margin-bottom: 45px">
+				<h2 class="nino-sectionHeading" style="color: rgb(18, 66, 116);">Inscreve-te na Opening Ceremony at&eacute 12 de Janeiro!
+				</h2>
+				<div class="flex-row">
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="days" style="font-size: 35px;"></span> <br>Dias</p>
 						</div>
-					</a>
+					</div>			
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="hours" style="font-size: 35px;"></span> <br>Horas</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="minutes" style="font-size: 35px;"></span> <br>Minutos</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="seconds" style="font-size: 35px;"></span> <br>Segundos</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="timer2">
+							<a href="https://forms.gle/iQLDbPFZZzWA5FLK7" style="color: #fff">Candidata-te <span
+								style="color: rgb(248, 153, 32)"><b>aqui</b></span>!</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>-->
-	<!--/#nino-counting-->
-
+	
+		</section>
+	-->
 	<!-- BEST Inside View + BEST Lisboa
     ================================================== -->
 
 	<section id="nino-uniqueDesign">
-		<div style="background: rgba(255,255,255,0.5);">
-			<div class="container text-center">
-				<!--<h2 class="nino-sectionHeading">
-					</h2>-->
-				<h2 class="nino-sectionHeading">
-					BEST Inside View
-				</h2>
-				<iframe height="400" width="800" src="https://www.youtube.com/embed/FDOcx2Bf2_I" frameborder="0"
-					gesture="media" allowfullscreen style="max-width: 100%;"></iframe>
-				<img class="teamMember" src="images/ico/biv.png" style="margin-bottom: -5%;">
-			</div>
-		</div>
-	</section>
-	<!--/#nino-uniqueDesign-->
+			<div style="background: rgb(18, 66, 116);">
+				<div class="container text-center">
+					<!--<h2 class="nino-sectionHeading">
+						</h2>-->
+					<h2 class="nino-sectionHeading" style="color: #fff;">
+						BEST Inside View
+					</h2>
+				
+					<p class="text-center" style="font-size: 20px">
+						O <b>BEST Inside View (BIV)</b> &eacute um evento de <i>job shadowing</i> trazido para ti pelo BEST Lisboa. Este evento est	&aacute dividido na <span
+						style="color: rgb(248, 153, 32)"><b>Opening Ceremony</b></span> que ocorrer&aacute no dia <b>13 de Janeiro</b> e nos <span
+						style="color: rgb(248, 153, 32)"><b>Inside Days</b></span> em <b>Mar&ccedilo</b>. 
+<br> No <b>Inside Day</b> ter&aacutes a oportunidade de conhecer melhor o mundo do trabalho, seguindo um profissional da tua &aacuterea de interesse durante um dia t&iacutepico de trabalho.
 
-	<section id="timeline" class="text-center" style="background-color: rgba(0, 74, 173);">
-		<div class="container text-center">
-			<h2 class="nino-sectionHeading" style="color: #fff;">O nosso evento</h2>
-			<div class="row align">
-				<div class="col-md-6">
-					<img src="images/BIV2020/Timeline_vertical.png">
+
+					
+					</p>
+					<iframe height="400" width="800" src="https://www.youtube.com/embed/r_2UYcvR-bU" frameborder="0"
+						gesture="media" allowfullscreen style="max-width: 100%;"></iframe>
+						<br>
+						<br>
+					<!--<img class="teamMember" src="images/ico/biv.png" style="margin-bottom: -5%;">-->
+
+					
 				</div>
-				<div class="col-md-6" style="margin: auto 0; background-color: rgba(0, 74, 173);">
-					<div class="row">
-						<div class="col-md-6 teamMember">
-							<img src="images/ico/graph_blue.png" height="190">
-							<p class="text"> A <b>empresa</b> consegue uma maior exposi&ccedil&atildeo perante a
-								comunidade acad&eacutemica e um contacto muito mais pr&oacuteximo com os participantes.
-							</p>
-						</div>
-						<div class="col-md-6 teamMember">
-							<img src="images/ico/person_blue.png" height="190">
-							<p class="text">O <b>estudante</b> fica a saber um pouco mais sobre a forma como a empresa
-								funciona:
-								os m&eacutetodos de trabalho aplicados, a sua estrutura e organiza&ccedil&atildeo.</p>
-						</div>
-						<div class="col-md-6 teamMember">
-							<img src="images/ico/handshake_blue.png" height="190">
-							<p class="text"> Fortalece a liga&ccedil&atildeo entre os estudantes universit&aacuterios
-								e o mercado de trabalho.</p>
-						</div>
-						<div class="col-md-6 teamMember">
-							<img src="images/ico/business_blue.png" height="190">
-							<p class="text"> Acompanha um profissional da tua área de interesse por um dia.
-							</p>
+			</div>
+		</section>
+		<!--/#nino-uniqueDesign-->
+
+		<section id="timeline" class="text-center" style="background-color: #fff">
+			<div class="container py-3">
+				<h2 class="nino-sectionHeading" style="color: rgb(18, 66, 116);">Vantagens de participar no BIV</h2>
+				<div class="row justify-content-center">
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/1.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Aprende mais sobre o que a tua empresa favorita realmente faz.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/2.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Expande a tua rede e aprende a fazer contatos profissionais.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/3.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Conhece melhor a cultura e vida profissional das empresas.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/5.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Pratica as tuas habilidades interpessoais num ambiente profissional.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/6.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Ganha uma perspectiva diferente sobre o teu trabalho futuro, aprendendo com as experi&ecircncias de outras pessoas.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/4.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Descobre o teu potencial e os desafios que poder&aacutes encontrar no teu dia-a-dia.</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				<br>
+				<p class="text2"> ... e ainda habilita-te a ganhar um destes <span style="color: rgb(248, 153, 32)"><b>Pr&eacutemios</b></span> !!!</p>
+				<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+				<br>
+				<div class="row">
+					
+					<div class="col-lg-4 col-md-6 mb-3">
+						<a href="https://www.laserquest.pt/">
+							<img src="images/empresas2021/giveaway/laserquest.png" height="90px"/>
+							
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-3">
+						<a href="https://www.palmayachts.com/pt/private-tour-lisboa/?gclid=CjwKCAiA78aNBhAlEiwA7B76p2eA2rd8VlPvsmQkBRJSHx4TPDYu3ytuHokeuG3WjY86tR6-IiLbZhoCxtkQAvD_BwE">
+							<img src="images/empresas2021/giveaway/palmayachts.png" height="100px"/>
+							
+						</a>
+					</div>	
+				
+					<div class="col-lg-4 col-md-6 mb-3">
+						<a href="https://www.duckdive.pt/">
+							<img src="images/empresas2021/giveaway/duckdive.png" height="90px"/>
+							
+						</a>
+					</div>
+				</div>
+				<br>
+				<p class="text" style="font-size: 12px; margin-left: 2vw;">   * Os prémios consistem em três vouchers a serem sorteados pelos participantes na Opening Ceremony (LaserQuest e PalmaYatchs) e após os Inside Days (DuckDive).</p>
+			
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<h2 class="nino-sectionHeading">Conhece os nossos parceiros!</h2>
+	
 
-	<section id="companies">
-		<div class="container text-center">
-			<div class="row" style="margin-bottom: 30px;">
-				<div class="col-md-4"><a href="https://tecnico.ulisboa.pt"><img src="images/logosinstitucionais/IST.png"
-							alt="" style="max-height:100px"></a></div>
-				<div class="col-md-4"><a href="http://www.idesporto.pt/"><img src="images/logosinstitucionais/IPDJ.png"
-							alt="" style="max-height:100px"></a></div>
-				<div class="col-md-4"><a href="https://www.santandertotta.pt/"><img
-							src="images/logosinstitucionais/Santander.png" alt="" style="max-height:200px"></a></div>
-			</div>
+	
+
+	<section id="companies" style="background:  rgb(18, 66, 116); padding: 1% 0;">
+		<div class="container text-center pt-4">
+		<h2 class="nino-sectionHeading" style="color: #fff">Conhece os nossos parceiros!</h2>
+		
+			<div class="text"> Parceiros Principais </div>
 			<br>
 			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
 			<br><br>
+			
 			<div class="row">
-				<!--Empresas Diamond-->
-				<a href="https://www.energetus.pt/" target="_blank">
-					<div class="col-md-6" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Diamond/Energetus.png" style="max-height: 200px;">
-					</div>
-				</a>
-				<a href="https://www.jll.pt/" target="_blank">
-					<div class="col-md-6" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Diamond/jlltetris.png" style="max-height: 200px;">
-					</div>
-				</a>
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-2">
+					<a href="http://www.thenavigatorcompany.com/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/navigator.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.quadrante-engenharia.pt/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/quadrante.png"
+						/>
+						</div>	
+					</a>
+				</div>
 			</div>
 			<div class="row">
-				<a href="https://www.novabase.pt/" target="_blank">
-					<div class="col-md-6" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Diamond/novabase-logo.svg" style="max-height: 200px;">
-					</div>
-				</a>
-				<a href="https://www.celfocus.com/home/" target="_blank">
-					<div class="col-md-6" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Diamond/celfocus-logo.svg" style="max-height: 200px;">
-					</div>
-				</a>
-			</div>
-			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
-			<br><br>
-			<div class="row">
-				<!--Empresas Gold-->
-				<a href="https://transinsular.pt/pt/grupo-ete" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Gold/ete.png" style="max-height: 175px;">
-					</div>
-				</a>
-				<a href="https://jetsj.com/" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Gold/jet.jpeg" style="max-height: 175px;">
-					</div>
-				</a>
-				<a href="https://oak-peak.com/" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Gold/oakpeak.png" style="max-height: 175px;">
-					</div>
-				</a>
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-2">
+					<a href="https://www.nttdata.com/global/en/">
+						<div class="card-big">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/ntt data.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.filstone.com/pt/inicio">
+						<div class="card-big">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/filstone-logo2-org-yyzu.png"
+						/>
+						</div>	
+					</a>
+				</div>
 			</div>
 			<div class="row">
-				<a href="https://www.premium-minds.com/" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Gold/premiumminds.png" style="max-height: 175px;">
-					</div>
-				</a>
-				<a href="http://en.thenavigatorcompany.com/" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Gold/navigator-logo.png" style="max-height: 175px;">
-					</div>
-				</a>
-				<a href="https://consulai.com/" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem; margin-top: 4%;">
-						<img src="images/empresas 2020/Gold/consulai-logo.svg" style="max-height: 175px;">
-					</div>
-				</a>
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-4">
+					<a href="https://integerconsulting.pt/en/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/logo-integer-black-min.png" height="110px"
+						/>
+						</div>	
+					</a>
+				</div>
 			</div>
-			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 30px auto 0px auto;"></div>
-			<br><br>
-			<div class="row">
-				<a href="https://www.ipfn.tecnico.ulisboa.pt/" target="_blank">
-					<!--Empresas Silver-->
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Silver/plasmas.png" style="max-height: 150px;">
-					</div>
-				</a>
-				<a href="https://skyline.be/" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Silver/skyline-logo.svg" style="max-height: 150px;">
-					</div>
-				</a>
-				<a href="https://www.sidul.pt/home" target="_blank">
-					<div class="col-md-4" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Silver/sidul-logo.png" style="max-height: 100px;">
-					</div>
-				</a>
-			</div>
-			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br>
+			<p class="text2"> Participa na <b>Opening Ceremony</b> e conhece a <span style="color: rgb(248, 153, 32)"><b>The Navigator Company</b></span>, 
+				a <span style="color: rgb(248, 153, 32)"><b>Quadrante</b></span>,
+				a <span style="color: rgb(248, 153, 32)"><b>NTT Data</b></span>,
+				a <span style="color: rgb(248, 153, 32)"><b>Filstone</b></span>,
+				e a <span style="color: rgb(248, 153, 32)"><b>Integer Consulting</b></span> na sessão de roundtables.</p>
 			<br>
 			<div class="row">
-				<a href="https://www.ibm.com/pt-en" target="_blank">
-					<!--Empresas Bronze-->
-					<div class="col-md-2 col-md-offset-1" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Bronze/ibm.png" style="max-height: 100px;">
-					</div>
-				</a>
-				<a href="https://jsj.pt/main/" target="_blank">
-					<div class="col-md-2" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Bronze/jsj-logo.png" style="max-height: 100px;">
-					</div>
-				</a>
-				<a href="https://www.life-emotions.pt/pt" target="_blank">
-					<div class="col-md-2" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Bronze/lifeemotions.png" style="max-height: 100px;">
-					</div>
-				</a>
-				<a href="http://www.noz.com.pt/" target="_blank">
-					<div class="col-md-2" style="margin-bottom: 1rem;">
-						<img src="images/empresas 2020/Bronze/noz-arch-logo.jpg" style="max-height: 100px;">
-					</div>
-				</a>
-				<a href="https://clynx.io/" target="_blank">
-					<div class="col-md-2" style="margin-bottom: 1rem; margin-top: -1%;">
-						<img src="images/empresas 2020/Bronze/clynx-logo.png" style="max-height: 100px;">
-					</div>
-				</a>
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-2">
+					<a href="https://jetsj.com/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/jet.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.life-emotions.pt/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/life-emotions-logo.svg"
+						/>
+						</div>	
+					</a>
+				</div>							
 			</div>
-		</div>
-	</section>
 
-	<!--<section id="nino-whatWeDo">
-		<div class="container" class="text-center">
-			<div class="col-md-2  col-sm-4">
-				<img src="images/ico/lampada.png" align="center">
-				<p class="nino-sectionDesc">A 9ª edição do BEST Inside View terá início no dia 19 de Novembro de 2019,
-					com a <b>Cerimónia de Abertura </b>
-					que terá lugar no Instituto Superior Técnico.</p>
+			<br><br>
+			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br>
+			<div class="text"> Parceiros</div>
+			<br>
+			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br><br>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://engexpor.com/en/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/engexpor_logo.png" height="75px"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.ete.pt/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/ete.png" height="75px"
+						/>
+						</div>	
+					</a>
+				</div>	
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.nemus.pt/en/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/nemus.png"
+						/>
+						</div>	
+					</a>
+				</div>
 			</div>
-			<div class="col-md-1  col-sm-1">
-			</div>
-			<div class="col-md-2  col-sm-4">
-				<img src="images/ico/people.png" align="center">
-				<p class="nino-sectionDesc"> De seguida haverá uma <b>Sessão de Networking</b> onde os alunos poderão
-					conhecer
-					de perto as empresas e oportunidades que estas trazem ao evento!</p>
-			</div>
-			<div class="col-md-1  col-sm-1">
-			</div>
-			<div class="col-md-2  col-sm-4">
-				<img src="images/ico/lupa.png" align="center">
-				<p class="nino-sectionDesc"> Não te esqueças de ler os <b>Regulamentos</b> para estudantes do IST <a
-						href="./[BIV][Participants]Regulation.pdf">aqui</a></p>
-			</div>
-			<div class="col-md-1  col-sm-1">
-			</div>
-			<div class="col-md-2  col-sm-4">
-				<img src="images/ico/people2.png" align="center">
-				<p class="nino-sectionDesc"> Quando os resultados das colocações forem anunciados, poderás entrar em
-					contacto direto com a empresa que irás visitar e estabelecer aí a data concreta do teu <b>Inside
-						Day!</b> </p>
-			</div>
-			<div class="col-md-1  col-sm-1">
-			</div>
-		</div>
-	</section> -->
 
-	<!-- Our Team 
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="http://www.fcm.pt/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/fcm.png" height="80px"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://magnifinance.com/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/logo-magnifinance@2x.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://skyline.be/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/skyline-logo.svg" height="80px"
+						/>
+						</div>	
+					</a>
+				</div>
+				
+			</div>
+			<div class="row">
+				
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://qub-it.com/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/qubit.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://jsj.pt/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/jsj.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.clynx.io/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Starup/clynx+logo+squared.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-4">
+					<a href="https://www.nevaro.tech/pt/pagina-inicial/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Starup/nevaro-logo.png" height="80px"
+						/>
+						</div>	
+					</a>
+				</div>
+			</div>
+			
+			<br><br>
+			<div style="border-bottom: #FAA519 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://tecnico.ulisboa.pt">
+						<div class="card-small">
+							<img 
+								class="big card-logo"
+								src="images/logosinstitucionais/IST.png" height="90px"
+							/>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="http://www.idesporto.pt/">
+						<div class="card-small">
+							<img 
+								class="big card-logo"
+								src="images/logosinstitucionais/IPDJ.png" height="90px"
+							/>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.santandertotta.pt/">
+						<div class="card-small">
+							<img
+								class="big card-logo"
+								src="images/logosinstitucionais/QGexCrIYKkOM-1557827185986.png" height="90px"
+							/>
+						</div>
+					</a>
+				</div>
+					
+			</div>
+
+			<br><br>
+			<br>
+		</section>
+			
+
+		<!-- Portfolio
 	================================================== -->
-	<section id="team" style="margin-top: -20px;">
-		<div class="text-center">
-			<div class="row" style="background:  rgba(253, 155, 28); padding: 1% 0;">
-				<h2 class="nino-sectionHeading" style="color: #fff;">Conhece a nossa equipa!</h2>
-				<div class="col-md-4 col-md-offset-4 mb-3">
-					<img class="teamMember img-circle" src="images/our-team/Rita.jpg">
-					<h5 class="name mb-0" style="color: #fff;">Rita Santos</h5>
-					<p class="mb-0 position" style="color: #fff;">Main Organiser</p>
-					<a href="https://www.linkedin.com/in/rita-santos-30049b187"><img
-							src="images/BIV2020/white_linkedin.png" height="30"></a>
-				</div>
-			</div>
-			<div class="row" style="background: rgba(0, 74, 173); padding: 1% 0;">
-				<div class="col-md-4 col-sm-6 mb-3">
-					<img class="teamMember img-circle" src="images/our-team/Beatriz.jpeg">
-					<h5 class="name mb-0" style="color: #fff;">Beatriz Vale</h5>
-					<p class="mb-0 position" style="color: #fff" ;>Communication Responsible</p>
-					<a href="https://www.linkedin.com/in/beatriz-vale-655895172/"><img
-							src="images/BIV2020/white_linkedin.png" height="30"></a>
-				</div>
-				<div class="col-md-4 col-sm-6 mb-3">
-					<img class="teamMember img-circle" src="images/our-team/Filipa.jpeg">
-					<h5 class="name mb-0" style="color: #fff">Filipa Costa</h5>
-					<p class="mb-0 position" style="color: #fff">Public Relations Responsible</p>
-					<a href=""><img src="images/BIV2020/white_linkedin.png" height="30"></a>
-				</div>
-				<div class="col-md-4 col-sm-6 mb-3">
-					<img class="teamMember img-circle" src="images/our-team/Leonor.jpeg">
-					<h5 class="name mb-0" style="color: #fff">Leonor Godinho</h5>
-					<p class="mb-0 position" style="color: #fff">Corporate Relations Responsible</p>
-					<a href="https://www.linkedin.com/in/leonor-rgodinho/"><img src="images/BIV2020/white_linkedin.png"
-							height="30"></a>
-				</div>
-			</div>
-			<div class="row" style="background:rgba(253, 155, 28); padding: 1% 0;">
-				<div class="col-md-4 col-md-offset-2 col-sm-6 mb-3">
-					<img class="teamMember img-circle" src="images/our-team/Duarte.jpeg">
-					<h5 class="name mb-0" style="color: #fff;">Duarte Costa</h5>
-					<p class="mb-0 position" style="color: #fff;">Design Responsible</p>
-					<a href="https://www.linkedin.com/in/duarte-costa-a98096198/"><img
-							src="images/BIV2020/white_linkedin.png" height="30"></a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3 mb-3">
-					<img class="teamMember img-circle" src="images/our-team/Jamilson.jpg">
-					<h5 class="name mb-0" style="color: #fff;">Jamilson Junior</h5>
-					<p class="mb-0 position" style="color: #fff;">Information Technology Responsible</p>
-					<a href="https://www.linkedin.com/in/jamilson-junior/"><img src="images/BIV2020/white_linkedin.png"
-							height="30"></a>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<!-- Docs
-    ================================================== -->
-	<section id="nino-doc" style="background-color: grey; margin-top: -30px;">
-		<div class="container" style="text-align: center;">
-			<a href="docs/biv_regulations.pdf" target="_blank" class="nino-sectionHeading1">
-				<i class="mdi mdi-file-document nino-icon"></i>
-				<span class="text">Regulamento</span>
-			</a>
-		</div>
-	</section>
-
-	<!-- Portfolio
-	================================================== -->
-	<section id="previous-editions" style="margin-top: -40px;">
-		<h2 class="nino-sectionHeading">
-			Edições anteriores
-		</h2>
+	<section id="previous-editions">
+		<h2 class="nino-sectionHeading" style="color: rgb(18, 66, 116)">Edições anteriores</h2>
 		<div id="slideshow" class="carousel slide" data-ride="carousel">
+		
 			<!-- Indicators
 			<ol class="carousel-indicators">
 				<li data-target="#slideshow" data-slide-to="0" class="active"></li>
@@ -467,79 +540,62 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<div class="col-md-4 no-pad text-center">
-						<img src="images/BIV2020/biv2019_1.jpg">
-						<p class="text">9th edition 2019</p>
+					<div class="col-md-4 col-xs-12 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV10.png">
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
-						<img src="images/BIV2020/biv2019.jpg">
-						<p class="text">9th edition 2019</p>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="col-md-4 no-pad text-center">
+					<div class="col-md-4 col-xs-12 no-pad text-center">
 						<img src="images/BIV2020/biv2019_2.jpg">
-						<p class="text">9th edition 2019</p>
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
+					<div class="col-md-4 col-xs-12 no-pad text-center">
 						<img src="images/edicoes-anteriores/BIV08.jpg">
-						<p class="text">8th edition 2018</p>
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
+					<div class="col-md-4 col-sm-12 no-pad text-center">
 						<img src="images/edicoes-anteriores/BIV07.jpg">
-						<p class="text">7th edition 2017</p>
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
+					<div class="col-md-4 col-sm-12 no-pad text-center">
 						<img src="images/edicoes-anteriores/1BIV06.jpg">
-						<p class="text">6th edition 2016</p>
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
+					<div class="col-md-4 col-sm-12 no-pad text-center">
 						<img src="images/edicoes-anteriores/BIV05.jpg">
-						<p class="text">5th edition 2015</p>
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
+					<div class="col-md-4 col-sm-12 no-pad text-center">
 						<img src="images/edicoes-anteriores/BIV04.jpg">
-						<p class="text">4th edition 2014</p>
 					</div>
 				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
-						<img src="images/edicoes-anteriores/BIV03.jpg">
-						<p class="text">3rd edition 2013</p>
+					<div class="col-md-4 col-sm-12 no-pad text-center">
+						<img src="images/edicoes-anteriores/BIV03.png">
 					</div>
 				</div>
 
-				<!--<div class="item">
-					<div class="col-md-4 no-pad text-center">
+				<div class="item">
+					<div class="col-md-4 col-sm-12 no-pad text-center">
 						<img src="images/edicoes-anteriores/BIV02.jpg">
-						<p class="text">2nd edition 2012</p>
 					</div>
-				</div>-->
+				</div>
 
 				<div class="item">
-					<div class="col-md-4 no-pad text-center">
+					<div class="col-md-4 col-sm-12 no-pad text-center">
 						<img src="images/edicoes-anteriores/BIV01.jpg">
-						<p class="text">1st edition 2011</p>
 					</div>
 				</div>
 			</div>
@@ -558,9 +614,10 @@
 
 	<!-- Testimonial
     ================================================== -->
+
 	<section class="nino-testimonial">
 		<div class="container">
-			<h2 class="nino-sectionHeading title">
+			<h2 class="nino-sectionHeading" style="color: #fff;">
 				Testemunhos
 			</h2>
 			<div class="nino-testimonialSlider">
@@ -568,16 +625,11 @@
 					<li>
 						<div layout="row">
 							<div class="nino-symbol fsr">
-								<i class="mdi mdi-comment-multiple-outline nino-icon"></i>
+								<i class="mdi mdi-wechat nino-icon"></i>
 							</div>
 							<div>
-								<p class="quote">"O que me proponho a oferecer é uma visão completamente diferente da
-									actual no que toca às possibilidades de emprego associadas a cursos superiores da
-									área da Engenharia, mostrar que existe ainda uma visão muito redutora ou elitista do
-									que pode fazer um Engenheiro, quando na realidade, e se não tivermos medo de olhar
-									pela janela em vez de pelo buraco da fechadura, conseguimos ver que as
-									possibilidades são imensas."</p>
-								<span class="name">André Vale, Associação Cultural Moinho da Juventude</span>
+								<p class="quote">"O BEST Inside Day foi uma experi&ecircncia bastante enriquecedora, que me permitiu ter uma maior e melhor noção do trabalho numa empresa da minha &aacuterea. Foi um dia num ambiente que se aproxima do que vou viver no futuro, o que s&oacute mostra a import&acircncia de aproveitar uma oportunidade destas. Recomendo e vou certamente repetir se tiver essa oportunidade!"</p>
+								<span class="name">Andr&eacute Xavier, Arquitetura - Participante 10ª Edição</span>
 							</div>
 						</div>
 					</li>
@@ -588,14 +640,9 @@
 								<i class="mdi mdi-wechat nino-icon"></i>
 							</div>
 							<div>
-								<p class="quote">"Juntei-me ao BEST há 2 anos e fiquei logo familiarizada com o BEST
-									Inside View! Fiquei responsável por toda a logística da Cerimónia de Abertura e a
-									Networking Session, o que foi verdadeiramente enriquecedor. A melhor parte acerca
-									deste evento é o facto de ser genuinamente dedicado aos estudantes e às suas
-									necessidades como futuros profissionais de sucesso. Foi fantástico contribuir e ter
-									algum impacto na vida académica dos estudantes."</p>
-								<span class="name">Catarina Carinhas, BEST Lisboa - Logistics Responsible da 5ª
-									Edição</span>
+								<p class="quote">"No meu Inside Day, descobri todo um novo mundo resultante da &aacuterea de programação ao servi&ccedilo da agricultura. Isto ajudou-me a perceber que o curso de engenharia inform&aacutetica &eacute muito mais do que estar numa secret&aacuteria a trabalhar, e gra&ccedilas à Consulai e ao BEST Lisboa abri os meus horizontes naquilo que ser&aacute o meu futuro.
+									"</p>
+								<span class="name">Bernardo Nunes, Engenharia Inform&aacutetica e de Computadores - Participante 10ª Edição</span>
 							</div>
 						</div>
 					</li>
@@ -603,13 +650,42 @@
 					<li>
 						<div layout="row">
 							<div class="nino-symbol fsr">
-								<i class="mdi mdi-comment-multiple-outline nino-icon"></i>
+								<i class="mdi mdi-wechat nino-icon"></i>
 							</div>
 							<div>
-								<p class="quote">"O envolvimento que eu tive na 6ª edição do BEST Inside View foi uma
-									experiência rica, tive a oportunidade de falar com muitos profissionais e
-									desenvolver a minha network."</p>
-								<span class="name">António Caxaria, BEST Lisboa - Main Organizer da 6ª Edição</span>
+								<p class="quote1">"Somos duas alunas do 3º ano de arquitetura e tivemos a oportunidade de visitar a JLL T&eacutetris. Apesar das experi&ecircncias durante este dia terem sido diferentes, ambas concordamos que nos abriu os horizontes e que foram enriquecedoras.
+									Eu, In&ecircs, fui a primeira a passar um dia nesta empresa, come&ccedilando por visitar o edif&iacutecio sede da empresa e acabando por assistir a uma reunião de trabalho, conseguindo descobrir um pouco mais sobre o mundo laboral e os v&aacuterios caminhos que se podem tomar ap&oacutes a conclusão do curso. J&aacute eu, M&oacutenica, tive uma visita um pouco mais pr&aacutetica, onde visitei v&aacuterias obras que estavam a decorrer no momento e descobri tamb&eacutem uma possibilidade de trabalho futuro."</p>
+								<span class="name">In&ecircs Marques e M&oacutenica Leonardo, Arquitetura - Participantes 10ª Edição</span>
+							</div>
+						</div>
+					</li>
+					<!-------------------------------------------------------------------------------->
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-wechat nino-icon"></i>
+							</div>
+							<div>
+								<p class="quote">"Juntei-me ao BEST h&aacute 2 anos e fiquei logo familiarizada com o BEST
+									Inside View! Fiquei respons&aacutevel por toda a log&iacutestica da Cerim&oacutenia de Abertura e a
+									Networking Session, o que foi verdadeiramente enriquecedor. A melhor parte acerca
+									deste evento &eacute o facto de ser genuinamente dedicado aos estudantes e às suas
+									necessidades como futuros profissionais de sucesso. Foi fant&aacutestico contribuir e ter
+									algum impacto na vida acad&eacutemica dos estudantes."</p>
+								<span class="name">Catarina Carinhas, BEST Lisboa - Logistics Responsible da 5ª
+									Edição</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div layout="row">
+							<div class="nino-symbol fsr">
+								<i class="mdi mdi-wechat nino-icon"></i>
+							</div>
+							<div>
+								<p class="quote">"Ser Main Organizer do BEST Inside View 2020/2021 foi uma experiência incrível. Tive a oportunidade de trabalhar com uma equipa fantástica e crescer com eles à medida que trabalhavamos em equipa para conseguir dar a melhor experiência possível a alunos e empresas apesar de todos os obstáculos colocados pela pandemia."</p>
+								<span class="name">Rita Santos, BEST Lisboa - Main Organizer da 10ª
+									Edição</span>
 							</div>
 						</div>
 					</li>
@@ -617,7 +693,217 @@
 			</div>
 		</div>
 	</section>
-	<!--/#nino-testimonial-->
+	<!--/#nino-testimonial--> 
+	<!-- FAQs
+	================================================== -->
+
+	<section id="nino-faq" >
+		<div class="container">
+			<div class="faq-content" >
+				<h2 class="nino-sectionHeading" style="color: rgb(18, 66, 116);">Perguntas Frequentes </h2>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q1" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q1" class="panel-title" style="color: rgb(18, 66, 116);">Quem se pode inscrever?</label>
+							<div class="panel-content">O BIV est&aacute aberto a todos os estudantes inscritos no Instituto Superior T&eacutecnico.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q2" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q2" class="panel-title" style="color: rgb(18, 66, 116);">&Eacute necess&aacuterio participar na Opening Ceremony para participar nos Inside Days?</label>
+							<div class="panel-content">A organização sugere a participação em ambas as partes do BEST Inside View. Ao participar na Opening Ceremony (OC), ter&aacutes a oportunidade de ouvir pitches das empresas e fazer todas as perguntas que desejares, para que possas escolher melhor onde desejas realizar o teu Inside Day. No entanto, não &eacute obrigat&oacuterio e haver&aacute um segundo per&iacuteodo de inscrição apenas para os Inside Days ap&oacutes a OC.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q11" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q11" class="panel-title" style="color: rgb(18, 66, 116);">Quais as normas de segurança que devo seguir para participar na Opening Ceremony?</label>
+							<div class="panel-content">Para a Opening Ceremony é necessário a apresentação de um dos seguintes documentos: (i) certificado digital COVID da EU; (ii) teste PCR negativo válido nas últimas 72 horas; ou (iii) teste de antigénio negativo válido nas últimas 48 horas. </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q12" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q12" class="panel-title" style="color: rgb(18, 66, 116);">Como me inscrevo para os Inside Days?
+							</label>
+							<div class="panel-content">A inscrição está dividida em duas fases. Na primeira fase, os estudantes que participarem na Opening Ceremony (OC) terão a oportunidade de preencher o formulário de inscrição para os Inside Days com 48 horas de antecedência em relação aos restantes estudantes e receberam ainda o resultado do matching com a empresa com antecedência. A segunda fase para preencher as vagas sobrantes começa 48 horas após a primeira e terminará no dia 24 de Janeiro.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q3" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q3" class="panel-title" style="color: rgb(18, 66, 116);">Como &eacute efetuado o matching? </label>
+							<div class="panel-content">O matching &eacute efetuado sempre respeitando as prefer&ecircncias dos alunos e das empresas de acordo com crit&eacuterios definidos pela organização que est&aacute presente no <a
+								href="#nino-doc">regulamento</a> do evento.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q4" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q4" class="panel-title" style="color: rgb(18, 66, 116);">Quando saberei os resultados do matching?</label>
+							<div class="panel-content">Ir&aacutes receber um email do BEST Lisboa após uma semana do final do per&iacuteodo de inscrição para os Inside Days.
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q5" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q5" class="panel-title" style="color: rgb(18, 66, 116);">O que acontece depois de ser alocado para uma empresa?
+							</label>
+							<div class="panel-content">Trocaremos contatos entre ti e o respons&aacutevel da empresa de forma a organizarem o Inside Day. A comunicação ser&aacute mediada por n&oacutes, em especial pela nossa Communication Responsible (Marta Rodrigues).
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q6" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q6" class="panel-title" style="color: rgb(18, 66, 116);">Preciso de submeter o meu CV? O CV deve estar em
+								portugu&ecircs ou ingl&ecircs?</label>
+							<div class="panel-content">Para participar no BEST Inside View, &eacute obrigat&oacuterio submeter o teu CV. O CV pode ser em portugu&ecircs ou ingl&ecircs.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q7" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q7" class="panel-title" style="color: rgb(18, 66, 116);">&Eacute necess&aacuterio pagar para participar na Opening Ceremony?</label>
+							<div class="panel-content">A Opening Ceremony do BIV &eacute um evento gratuito no entanto ter&aacutes que efetuar um dep&oacutesito de 2 € para garantir a tua participação. O dep&oacutesito ser&aacute devolvido no final do evento de acordo com o <a
+									href="#nino-doc">regulamento</a>.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q8" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q8" class="panel-title" style="color: rgb(18, 66, 116);">&Eacute necess&aacuterio pagar para participar nos Inside Days?</label>
+							<div class="panel-content">Os Inside Days do BIV &eacute um evento gratuito no entanto ter&aacutes que efetuar um dep&oacutesito de 5 € para garantir a tua participação. O dep&oacutesito ser&aacute devolvido no final do evento de acordo com o
+								<a href="#nino-doc"
+									target="_blank">regulamento</a>.
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q9" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q9" class="panel-title" style="color: rgb(18, 66, 116);">A quem devo enviar o dep&oacutesito?</label>
+							<div class="panel-content">O pagamento da caução dever&aacute ser enviado para a conta “Grupo Local BEST Lisboa”. Os detalhes necess&aacuterios para processar o pagamento estarão dispon&iacuteveis nos <a href="https://forms.gle/iQLDbPFZZzWA5FLK7"
+								target="_blank">formul&aacuterios de inscrição</a>.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q10" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(248, 153, 32);">+</div>
+							<label for="q10" class="panel-title" style="color: rgb(18, 66, 116);">Quem devo contatar se tiver uma pergunta?</label>
+							<div class="panel-content">Se tiveres alguma d&uacutevida ou problema podes contactar-nos enviando um email para biv@best.ist.ul.pt. 
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+			<br>
+	</section>
+
+
+
+
+	<!-- Docs
+    ================================================== -->
+	<section id="nino-doc" style="background-color: rgb(18, 66, 116); margin-top: -30px;">
+		<div class="container" style="text-align: center;">
+			<a href="docs/biv_regulations.pdf" target="_blank" class="nino-sectionHeading1">
+				<i class="mdi mdi-file-document nino-icon"></i>
+				<span class="text">Consulta aqui o regulamento! </span>
+			</a>
+		</div>
+	</section>
+
+
+	<!-- Our Team 
+	================================================== -->
+	<section id="team" style="margin-top: -20px;">
+		<div class="text-center">
+			<div class="row" style="background:  #fff; padding: 1% 0;">
+				<h2 class="nino-sectionHeading" style="color: rgb(18, 66, 116);">Conhece a nossa equipa!</h2>
+				<div class="col-md-4 col-md-offset-4 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Daniela.JPG" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">Daniela Lopes</h5>
+					<p class="mb-0 position" style="color: #333;">Main Organiser <br> Biological Engineering</p>
+					<a href="https://www.linkedin.com/in/daniela-dlopes/"><img
+							src="images/BIV2020/linkedin.svg" height="35"></a>
+				</div>
+			</div>
+			<div class="row" style="background: #fff; padding: 1% 0;">
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Marta.JPG" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">Marta Rodrigues</h5>
+					<p class="mb-0 position" style="color: #333" ;>Communication Responsible <br> Electrical and Computer Engineering </p>
+					<a href=""><img
+							src="images/BIV2020/linkedin.svg" height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Samara.JPG" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116)">Samara Farias</h5>
+					<p class="mb-0 position" style="color: #333">Public Relations Responsible <br> Mechanical Engineering</p>
+					<a href="https://www.linkedin.com/in/samara-ramos-2aa761205/"><img src="images/BIV2020/linkedin.svg" height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/André.JPG" height="250px"> 
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116)">Andr&eacute Ribeiro</h5>
+					<p class="mb-0 position" style="color: #333">Corporate Relations Responsible <br> Applied Mathematics and Computation</p>
+					<a href="https://www.linkedin.com/in/andré-ribeiro-math"><img src="images/BIV2020/linkedin.svg"
+							height="35"></a>
+				</div>
+			</div>
+			<div class="row" style="background:#fff; padding: 1% 0;">
+				<div class="col-md-4 col-md-offset-2 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Joana.JPG" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">Joana Nunes</h5>
+					<p class="mb-0 position" style="color: #333;">Design Responsible <br> Architecture </p>
+					<a href="https://www.linkedin.com/in/joana-b-nunes/"><img
+							src="images/BIV2020/linkedin.svg" height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-md-offset-0 col-sm-offset-3 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Bia.png" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">Beatriz Vale</h5>
+					<p class="mb-0 position" style="color: #333;">Information Technology Responsible <br> Biomedical Engineering and Biophysics</p>
+					<a href="https://www.linkedin.com/in/beatriz-vale-655895172/"><img src="images/BIV2020/linkedin.svg"
+							height="35"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	
 
 	<!-- Footer
     ================================================== -->
@@ -625,15 +911,15 @@
 		<div class="container text-center">
 			<div class="row line">
 				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6">
-					<h1 style="font-size:16px; color: #69CD28;"><b> Contactos</b> </h1>
+					<h1 style="font-size:14px; color: #fff;"><b> Contactos</b> </h1>
 					<p style="color: #FFF;"> lisbon@best.eu.org </p>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6">
-					<h1 style="font-size:14px; color: #FAA519 ;"> <b>Morada</b> </h1>
+					<h1 style="font-size:14px; color: #fff ;"> <b>Morada</b> </h1>
 					<p style="color: #FFF;"> Av. Rovisco Pais, 1 </p>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6 col-ts-offset-3">
-					<h1 style="font-size:14px; color: #1973BE ;"><b> Segue-nos </b></h1>
+					<h1 style="font-size:14px; color: #fff ;"><b> Segue-nos </b></h1>
 					<div class="nino-followUs">
 						<div class="socialNetwork">
 							<a href="https://www.facebook.com/bestlisboa/" class="nino-icon"><i
@@ -661,7 +947,7 @@
 		initializeClock();
 		function initializeClock() {
 			var d = new Date();
-			var endtime = new Date("Dec 6, 2020 23:59:59");        //mudar aqui a data, ano/mês/dia/hora/minuto...
+			var endtime = new Date("Jan 12, 2022 23:59:59");        //mudar aqui a data, ano/mês/dia/hora/minuto...
 			var days = document.getElementById("days");
 			var hours = document.getElementById("hours");
 			var minutes = document.getElementById("minutes");
